@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<!-- All the google fonts -->
+			<link rel="stylesheet" type="text/css" href="style.css">
+			<link href="https://fonts.googleapis.com/css?family=Farsan" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Athiti" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Source+Sans+Pro" rel="stylesheet">
+
+			<!-- ------------------------- -->
+			<title>Responsive Website Design</title>
+			<!-- Meta tags / Special tags required in the head -->
+			<link rel="stylesheet" href="responsive.css" media="screen and (max-width: 605px)">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+		</head>
+		<!-- body -->
+		<body>
+			<!-- Responsive nav bar -->
+			<div class="nav_wrapper">
+				<div class="mobile-menu"><a href="/">MENU</a></div>
+				<div class="buttons">
+					<ul>
+						<li><a href="#theLink">ABOUT ME</a></li>
+						<li><a href="/">PORTFOLIO</a></li>
+						<li><a href="/">MY APPROACH</a></li>
+						<li><a href="/">CONTACT</a></li>	
+					</ul>
+				</div>	
+			</div>
+			<div class="cover-image">
+				<div class="my-name"><span>Shane Creedon</span><br>Software Engineering Student</div>
+			</div>
+			<div class="profile-description "id="profile-description">
+				<!--About myself-->
+				<p class="desc-titles" id="theLink"> So, Who Am I? </p>
+				<div class="content-container">
+				<img src="Images/me.png"/>
+				<p class="desc-para">
+				<span>Student in Dublin City University</span>
+				<br>B.Sc. in Computer Applications (Bachelor Honours Degree)
+				<br>2015 - 2019
+				<br><br>Well, Me? I'm just a 19 year old guy pursuing his 
+				<br> dream by joining the IT industry.
+				<br> I love working with Technology and I am currently seeking 
+				<br>Internships to gain the experience necessary for employement.
+				</p>
+				</div>
+				<!--My passions / hobbies -->
+				<div class="content-container"></a>
+				<img src="Images/hobby.jpg"/>
+				<p class="desc-para">
+				<span>Gaming, Music, Movies</span>
+				<br>Ever since I was a young, gaming has always been something
+				<br>which felt truly magical to myself and I know, most of the
+				<br>youth today. I'd love to create my own game eventually!
+				<br><br> Music and movies also hold a great love in my heart,
+				<br>especially Christopher Nolan Films, truly amazing.
+				</p>
+				</div>
+				<!--My aspirations -->
+				<div class="content-container">
+				<img src="Images/aspiration.jpg"/>
+				<p class="desc-para">
+				<span>My Dream, My Desire, My Aspiration</span>
+				<br>In 2019 when I finish my degree and potentially complete
+				<br>a masters in Computer Science, I hope to work somewhere
+				<br> that holds it's employees to a great standing,
+				<br> here team-work and trust among colleages is expected.
+				<br><br> Creating, Innovating and helping others is what drives
+				<br> me and I would love to work with those that share the
+				<br> same ambition.
+				</p>
+				</div>
+			</div>
+			<!-- All the scripts necessary for animations and other gimicks -->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+   			<script>
+        	$(function() {
+  			$('a[href*="#"]:not([href="#"])').click(function() {
+    		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      		var target = $(this.hash);
+     		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    		if (target.length) {
+        	$('html, body').animate({
+        	scrollTop: target.offset().top
+        	}, 1000);
+        	return false;
+      		}
+    		}
+ 			});
+			});
+    		</script>
+		</body>
+	</html
