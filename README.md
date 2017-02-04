@@ -19,3 +19,7 @@ Another Installment:
 ![hobbies](https://cloud.githubusercontent.com/assets/21260839/18236549/2a3e068a-731f-11e6-94bb-aa0bbd02bf1b.png)
 -------------------------------------------------------------------------------------------------------
 ![aspirations](https://cloud.githubusercontent.com/assets/21260839/18236550/2bc5be94-731f-11e6-89aa-42b89fbcc408.png)
+-------------------------------------------------------------------------------------------------------
+The Most Recent Installment:
+-------------------------------------------------------------------------------------------------------
+![wesbite_cover](https://cloud.githubusercontent.com/assets/21260839/22620004/bdcea70e-eaf9-11e6-9297-5ec56f18982e.png)
