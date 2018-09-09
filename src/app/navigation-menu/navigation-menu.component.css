@@ -1,0 +1,23 @@
+.navigation-wrapper {
+    height: 85px;
+}
+
+/* Good Colour
+ * background-color: #28587B; */
+.navigation-menu {
+    position: fixed;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.navigation-items {
+    text-align: center;
+
+}
+
+.navigation-item {
+    display: inline-block;
+    padding: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
