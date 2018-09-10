@@ -1,12 +1,10 @@
-.navigation-wrapper {
-    height: 69.6px;
-}
-
 /* Good Colour
- * background-color: #28587B; */
+ * background-color: #28587B;
+ * Charcoal: #36454f;
+ */
 .navigation-menu {
     background-color: white;
-    position: fixed;
+    position: relative;
     white-space: nowrap;
     width: 100%;
     z-index: 2;
@@ -18,7 +16,7 @@
 
 .navigation-items a {
     text-decoration: none;
-    color:black;
+    color: #36464f;
 }
 
 .navigation-items li a:hover {
@@ -33,5 +31,5 @@
 
     font-size: 1.2em;
     font-weight: bold;
-    font-family: Calibri;
+    font-family: Calibri, Arial;
 }
