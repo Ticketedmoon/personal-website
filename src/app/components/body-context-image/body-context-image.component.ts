@@ -19,7 +19,7 @@ export class BodyContextImageComponent implements OnInit {
   private getVideoTag() {
     return this.sanitizer.bypassSecurityTrustHtml(
 	  `<video autoplay muted loop playsinline disableRemotePlayback id="video-background">
-            <source src="../../assets/stock-videos/background-animation.mp4" type="video/mp4">
+            <source src="../../../assets/stock-videos/buckle-animation.mp4" type="video/mp4">
         </video>`
 	);
   }
