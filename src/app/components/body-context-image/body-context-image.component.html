@@ -1,10 +1,6 @@
 <div class="image-context-body">
     <!-- Video background context-->
-    <div class="fullscreen-video-wrap">
-        <video autoplay muted loop preload="auto" id="video-background">
-            <source src="../../assets/stock-videos/background-animation.mp4" type="video/mp4">
-        </video>
-    </div>
+    <div class="fullscreen-video-wrap" [innerHTML]="videoTag"></div>
 
     <!-- Video Overlay colouring -->
     <div class="video-overlay"></div>
