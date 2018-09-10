@@ -1,23 +1,35 @@
-.navigation-wrapper {
-    height: 85px;
-}
-
 /* Good Colour
- * background-color: #28587B; */
+ * background-color: #28587B;
+ * Charcoal: #36454f;
+ */
 .navigation-menu {
-    position: fixed;
+    background-color: white;
+    position: relative;
     white-space: nowrap;
     width: 100%;
+    z-index: 2;
 }
 
 .navigation-items {
     text-align: center;
+}
 
+.navigation-items a {
+    text-decoration: none;
+    color: #36464f;
+}
+
+.navigation-items li a:hover {
+    color: #28587B;
 }
 
 .navigation-item {
     display: inline-block;
-    padding: 2em;
+    padding: 1.5em;
     margin-left: 5em;
     margin-right: 5em;
+
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: Calibri, Arial;
 }
