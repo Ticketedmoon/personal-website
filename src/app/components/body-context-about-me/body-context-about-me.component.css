@@ -6,8 +6,11 @@
 
     background-color: whitesmoke;
     position: relative;
-    padding-top:1em;
-    text-align:center
+    text-align:center;
+
+    -moz-box-shadow: 0 0 5px #555;
+    -webkit-box-shadow: 0 0 5px #555;
+    box-shadow: 0 0 5px #555;
 }
 
 .about-images {
@@ -24,8 +27,10 @@
 }
 
 .about-sub-title {
+    position: relative;
     text-align: center;
     padding: 1em;
+    top: 1em;
     font-size: 2em;
     font-weight: bold;
     font-family: PoiretOne-Regular, "Microsoft JhengHei Light", Arial;

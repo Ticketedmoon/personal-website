@@ -41,7 +41,7 @@ module.exports = "html, body {\r\n    height: 100%;\r\n    background-color: #44
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-navigation-menu></app-navigation-menu>\r\n<app-body-context-image></app-body-context-image>\r\n<app-body-context-about-projects></app-body-context-about-projects>"
+module.exports = "<app-navigation-menu></app-navigation-menu>\r\n<app-body-context-video></app-body-context-video>\r\n<app-body-context-about-me></app-body-context-about-me>"
 
 /***/ }),
 
@@ -95,13 +95,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _components_navigation_menu_navigation_menu_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/navigation-menu/navigation-menu.component */ "./src/app/components/navigation-menu/navigation-menu.component.ts");
 /* harmony import */ var _components_body_context_video_body_context_video_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/body-context-video/body-context-video.component */ "./src/app/components/body-context-video/body-context-video.component.ts");
-/* harmony import */ var _components_body_context_about_projects_body_context_about_projects_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/body-context-about-projects/body-context-about-projects.component */ "./src/app/components/body-context-about-projects/body-context-about-projects.component.ts");
+/* harmony import */ var _components_body_context_about_me_body_context_about_me_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/body-context-about-me/body-context-about-me.component */ "./src/app/components/body-context-about-me/body-context-about-me.component.ts");
+/* harmony import */ var _components_body_context_projects_body_context_projects_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/body-context-projects/body-context-projects.component */ "./src/app/components/body-context-projects/body-context-projects.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -117,7 +119,8 @@ var AppModule = /** @class */ (function () {
                 _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
                 _components_navigation_menu_navigation_menu_component__WEBPACK_IMPORTED_MODULE_3__["NavigationMenuComponent"],
                 _components_body_context_video_body_context_video_component__WEBPACK_IMPORTED_MODULE_4__["BodyContextVideoComponent"],
-                _components_body_context_about_projects_body_context_about_projects_component__WEBPACK_IMPORTED_MODULE_5__["BodyContextAboutProjectsComponent"]
+                _components_body_context_about_me_body_context_about_me_component__WEBPACK_IMPORTED_MODULE_5__["BodyContextAboutMeComponent"],
+                _components_body_context_projects_body_context_projects_component__WEBPACK_IMPORTED_MODULE_6__["BodyContextProjectsComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]
@@ -133,10 +136,10 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/body-context-about-projects/body-context-about-projects.component.css":
-/*!**************************************************************************************************!*\
-  !*** ./src/app/components/body-context-about-projects/body-context-about-projects.component.css ***!
-  \**************************************************************************************************/
+/***/ "./src/app/components/body-context-about-me/body-context-about-me.component.css":
+/*!**************************************************************************************!*\
+  !*** ./src/app/components/body-context-about-me/body-context-about-me.component.css ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -144,27 +147,27 @@ module.exports = ".about-introduction-section {\r\n    display: flex;\r\n    ali
 
 /***/ }),
 
-/***/ "./src/app/components/body-context-about-projects/body-context-about-projects.component.html":
-/*!***************************************************************************************************!*\
-  !*** ./src/app/components/body-context-about-projects/body-context-about-projects.component.html ***!
-  \***************************************************************************************************/
+/***/ "./src/app/components/body-context-about-me/body-context-about-me.component.html":
+/*!***************************************************************************************!*\
+  !*** ./src/app/components/body-context-about-me/body-context-about-me.component.html ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"about-introduction-section\">\r\n    <h4 class=\"about-sub-title\"> About Me </h4>\r\n\r\n    <div class=\"about-me about-sub-section\">\r\n        <img width=250 class=\"about-images\" src=\"../../../assets/images/pictureOfMe.png\"/>\r\n        <span class=\"about-sub-section-paragraphs\">\r\n            <h6 class=\"about-sub-section-title-context\"> My Hobbies </h6>\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n        </span>\r\n    </div>\r\n\r\n    <div class=\"about-hobbies about-sub-section\">\r\n        <img width=250 class=\"about-images\" src=\"../../../assets/images/gaming-icon.jpg\"/>\r\n        <span class=\"about-sub-section-paragraphs\">\r\n            <h6 class=\"about-sub-section-title-context\"> My Hobbies </h6>\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                enim ipsum possimus quidem reiciendis velit voluptate\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n        </span>\r\n    </div>\r\n\r\n    <div class=\"about-aspirations about-sub-section\">\r\n        <img width=250 class=\"about-images\" src=\"../../../assets/images/computing-image-mobile-computer.png\"/>\r\n        <span class=\"about-sub-section-paragraphs\">\r\n            <h6 class=\"about-sub-section-title-context\"> My Hobbies </h6>\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n        </span>\r\n    </div>\r\n</div><hr>"
+module.exports = "<div class=\"about-introduction-section\">\r\n    <h4 class=\"about-sub-title\"> About Me </h4>\r\n\r\n    <div class=\"about-me about-sub-section\">\r\n        <img width=250 class=\"about-images\" src=\"../../../assets/images/avatar.png\"/>\r\n        <span class=\"about-sub-section-paragraphs\">\r\n            <h6 class=\"about-sub-section-title-context\"> My Hobbies </h6>\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n        </span>\r\n    </div>\r\n\r\n    <div class=\"about-hobbies about-sub-section\">\r\n        <img width=250 class=\"about-images\" src=\"../../../assets/images/gaming-icon.jpg\"/>\r\n        <span class=\"about-sub-section-paragraphs\">\r\n            <h6 class=\"about-sub-section-title-context\"> My Hobbies </h6>\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                enim ipsum possimus quidem reiciendis velit voluptate\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n        </span>\r\n    </div>\r\n\r\n    <div class=\"about-aspirations about-sub-section\">\r\n        <img width=250 class=\"about-images\" src=\"../../../assets/images/computing-image-mobile-computer.png\"/>\r\n        <span class=\"about-sub-section-paragraphs\">\r\n            <h6 class=\"about-sub-section-title-context\"> My Hobbies </h6>\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n        </span>\r\n    </div>\r\n</div><hr>"
 
 /***/ }),
 
-/***/ "./src/app/components/body-context-about-projects/body-context-about-projects.component.ts":
-/*!*************************************************************************************************!*\
-  !*** ./src/app/components/body-context-about-projects/body-context-about-projects.component.ts ***!
-  \*************************************************************************************************/
-/*! exports provided: BodyContextAboutProjectsComponent */
+/***/ "./src/app/components/body-context-about-me/body-context-about-me.component.ts":
+/*!*************************************************************************************!*\
+  !*** ./src/app/components/body-context-about-me/body-context-about-me.component.ts ***!
+  \*************************************************************************************/
+/*! exports provided: BodyContextAboutMeComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BodyContextAboutProjectsComponent", function() { return BodyContextAboutProjectsComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BodyContextAboutMeComponent", function() { return BodyContextAboutMeComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -176,20 +179,83 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var BodyContextAboutProjectsComponent = /** @class */ (function () {
-    function BodyContextAboutProjectsComponent() {
+var BodyContextAboutMeComponent = /** @class */ (function () {
+    function BodyContextAboutMeComponent() {
     }
-    BodyContextAboutProjectsComponent.prototype.ngOnInit = function () {
+    BodyContextAboutMeComponent.prototype.ngOnInit = function () {
     };
-    BodyContextAboutProjectsComponent = __decorate([
+    BodyContextAboutMeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-body-context-about-projects',
-            template: __webpack_require__(/*! ./body-context-about-projects.component.html */ "./src/app/components/body-context-about-projects/body-context-about-projects.component.html"),
-            styles: [__webpack_require__(/*! ./body-context-about-projects.component.css */ "./src/app/components/body-context-about-projects/body-context-about-projects.component.css")]
+            selector: 'app-body-context-about-me',
+            template: __webpack_require__(/*! ./body-context-about-me.component.html */ "./src/app/components/body-context-about-me/body-context-about-me.component.html"),
+            styles: [__webpack_require__(/*! ./body-context-about-me.component.css */ "./src/app/components/body-context-about-me/body-context-about-me.component.css")]
         }),
         __metadata("design:paramtypes", [])
-    ], BodyContextAboutProjectsComponent);
-    return BodyContextAboutProjectsComponent;
+    ], BodyContextAboutMeComponent);
+    return BodyContextAboutMeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/body-context-projects/body-context-projects.component.css":
+/*!**************************************************************************************!*\
+  !*** ./src/app/components/body-context-projects/body-context-projects.component.css ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/body-context-projects/body-context-projects.component.html":
+/*!***************************************************************************************!*\
+  !*** ./src/app/components/body-context-projects/body-context-projects.component.html ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  body-context-projects works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/components/body-context-projects/body-context-projects.component.ts":
+/*!*************************************************************************************!*\
+  !*** ./src/app/components/body-context-projects/body-context-projects.component.ts ***!
+  \*************************************************************************************/
+/*! exports provided: BodyContextProjectsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BodyContextProjectsComponent", function() { return BodyContextProjectsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BodyContextProjectsComponent = /** @class */ (function () {
+    function BodyContextProjectsComponent() {
+    }
+    BodyContextProjectsComponent.prototype.ngOnInit = function () {
+    };
+    BodyContextProjectsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-body-context-projects',
+            template: __webpack_require__(/*! ./body-context-projects.component.html */ "./src/app/components/body-context-projects/body-context-projects.component.html"),
+            styles: [__webpack_require__(/*! ./body-context-projects.component.css */ "./src/app/components/body-context-projects/body-context-projects.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], BodyContextProjectsComponent);
+    return BodyContextProjectsComponent;
 }());
 
 
@@ -203,7 +269,7 @@ var BodyContextAboutProjectsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".image-context-body {\r\n    position: relative;\r\n    line-height: 1.5;\r\n    display: flex;\r\n    text-align: center;\r\n    align-items: center;\r\n    color: white;\r\n    height: 45em;\r\n    padding-bottom: 1em;\r\n}\r\n\r\n.fullscreen-video-wrap {\r\n    position: absolute;\r\n    height: 45em;\r\n\r\n    left: 0;\r\n    bottom: 0;\r\n    right: 0;\r\n\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n\r\n}\r\n\r\n.video-overlay {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 45em;\r\n    background-color: #225470;\r\n    z-index: 1;\r\n    opacity: 0.85;\r\n    top:0;\r\n    left:0;\r\n}\r\n\r\n.video-overlay-content {\r\n    text-align: center;\r\n    position: absolute;\r\n    white-space: nowrap;\r\n\r\n\r\n    width: 100%;\r\n    height: 100%;\r\n\r\n    z-index: 1;\r\n    font-size: 4em;\r\n    font-family: Monaco, \"Lucida Console\", monospace;\r\n    top: 2em;\r\n    left: 0;\r\n    bottom: 0;\r\n    right: 0;\r\n\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n\r\n.text-hobbies {\r\n    font-size: 0.3em;\r\n    line-height: 5em;\r\n}\r\n\r\n.gaming-controller-icon {\r\n    z-index: 5;\r\n    text-align: center;\r\n    margin: 0 auto;\r\n    padding-top: 25em;\r\n}"
+module.exports = ".image-context-body {\r\n    position: relative;\r\n    line-height: 1.5;\r\n    display: flex;\r\n    text-align: center;\r\n    align-items: center;\r\n    color: white;\r\n    height: 45em;\r\n    padding-bottom: 1em;\r\n}\r\n\r\n.fullscreen-video-wrap {\r\n    position: absolute;\r\n    height: 45em;\r\n\r\n    left: 0;\r\n    bottom: 0;\r\n    right: 0;\r\n\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n\r\n}\r\n\r\n.video-overlay {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 45em;\r\n    background-color: #225470;\r\n    z-index: 1;\r\n    opacity: 0.85;\r\n    top:0;\r\n    left:0;\r\n}\r\n\r\n.video-overlay-content {\r\n    text-align: center;\r\n    position: absolute;\r\n    white-space: nowrap;\r\n\r\n\r\n    width: 100%;\r\n    height: 100%;\r\n\r\n    z-index: 1;\r\n    font-size: 4em;\r\n    font-family: Monaco, \"Lucida Console\", monospace;\r\n    top: 2em;\r\n    left: 0;\r\n    bottom: 0;\r\n    right: 0;\r\n\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n\r\n.text-hobbies {\r\n    font-size: 0.3em;\r\n    line-height: 5em;\r\n}\r\n\r\n.gaming-controller-icon {\r\n    z-index: 5;\r\n    text-align: center;\r\n    margin: 0 auto;\r\n    padding-top: 25em;\r\n    opacity: 0.7;\r\n}\r\n\r\n.gaming-controller-icon img {\r\n    border-radius: 50%\r\n}"
 
 /***/ }),
 
@@ -214,7 +280,7 @@ module.exports = ".image-context-body {\r\n    position: relative;\r\n    line-h
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"image-context-body\">\r\n    <!-- Video background context-->\r\n    <div class=\"fullscreen-video-wrap\" [innerHTML]=\"videoTag\"></div>\r\n\r\n    <!-- Video Overlay colouring -->\r\n    <div class=\"video-overlay\"></div>\r\n\r\n    <!-- Video Overlay Content -->\r\n    <div class=\"video-overlay-content\">\r\n        <h2 class=\"text-common\"> Shane Creedon </h2>\r\n        <h6 class=\"text-common\"> Software Engineer </h6>\r\n        <p class=\"text-hobbies\"> Music | Programming | Gaming </p>\r\n    </div>\r\n\r\n    <div class=\"gaming-controller-icon\">\r\n        <img height=\"128\" src=\"../../../assets/images/controller.png\" alt=\"Gaming Controller icon, looks good and holds meaning to me\"/>\r\n    </div>\r\n\r\n</div>\r\n"
+module.exports = "<div class=\"image-context-body\">\r\n    <!-- Video background context-->\r\n    <div class=\"fullscreen-video-wrap\" [innerHTML]=\"videoTag\"></div>\r\n\r\n    <!-- Video Overlay colouring -->\r\n    <div class=\"video-overlay\"></div>\r\n\r\n    <!-- Video Overlay Content -->\r\n    <div class=\"video-overlay-content\">\r\n        <h2 class=\"text-common\"> Shane Creedon </h2>\r\n        <h6 class=\"text-common\"> Software Engineer </h6>\r\n        <p class=\"text-hobbies\"> Music | Programming | Gaming </p>\r\n    </div>\r\n\r\n    <div class=\"gaming-controller-icon\">\r\n        <img height=\"200\" src=\"../../../assets/images/pictureOfMe.png\" alt=\"Gaming Controller icon, looks good and holds meaning to me\"/>\r\n    </div>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -272,7 +338,7 @@ var BodyContextVideoComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* Good Colour\r\n * background-color: #28587B;\r\n * Charcoal: #36454f;\r\n */\r\n.navigation-menu {\r\n    position: fixed;\r\n    background-color: white;\r\n    white-space: nowrap;\r\n    width: 100%;\r\n    z-index: 100;\r\n}\r\n.navigation-items {\r\n    text-align: center;\r\n}\r\n.navigation-items a {\r\n    text-decoration: none;\r\n    color: #36464f;\r\n}\r\n.navigation-items li a:hover {\r\n    color: deepskyblue;\r\n}\r\n.navigation-item {\r\n    display: inline-block;\r\n    padding: 1.5em;\r\n    margin-left: 5em;\r\n    margin-right: 5em;\r\n\r\n    font-size: 1.2em;\r\n    font-weight: bold;\r\n    font-family: Calibri, Arial;\r\n}"
+module.exports = "/* Good Colour\r\n * background-color: #28587B;\r\n * Charcoal: #36454f;\r\n */\r\n.navigation-menu {\r\n    position: fixed;\r\n    background-color: white;\r\n    white-space: nowrap;\r\n    width: 100%;\r\n    z-index: 100;\r\n    box-shadow: 0 0 30px #000;\r\n}\r\n.navigation-items {\r\n    text-align: center;\r\n}\r\n.navigation-items a {\r\n    text-decoration: none;\r\n    color: #36464f;\r\n}\r\n.navigation-items li a:hover {\r\n    color: deepskyblue;\r\n}\r\n.navigation-item {\r\n    display: inline-block;\r\n    padding: 1.5em;\r\n    margin-left: 5em;\r\n    margin-right: 5em;\r\n\r\n    font-size: 1.2em;\r\n    font-weight: bold;\r\n    font-family: Calibri, Arial;\r\n}"
 
 /***/ }),
 
