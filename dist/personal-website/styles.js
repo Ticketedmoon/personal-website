@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nhtml, body {\n    height: 100%;\n    font-family: \"Segoe UI\", Tahoma, Georgia, Verdana, sans-serif;\n    overflow-x: hidden;\n}\n\n@font-face {\n    font-family: PoiretOne-Regular;\n    src: url('PoiretOne-Regular.ttf');\n}"
+module.exports = "* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\nhtml, body {\r\n    height: 100%;\r\n    font-family: \"Segoe UI\", Tahoma, Georgia, Verdana, sans-serif;\r\n    overflow-x: hidden;\r\n}\r\n\r\n@font-face {\r\n    font-family: PoiretOne-Regular;\r\n    src: url('PoiretOne-Regular.ttf');\r\n}"
 
 /***/ }),
 
@@ -539,7 +539,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/Shane/Documents/Git/personal-website/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\Shane Creedon\Documents\Github Projects\personal-website\src\styles.css */"./src/styles.css");
 
 
 /***/ })

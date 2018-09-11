@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "html, body {\n    height: 100%;\n}"
+module.exports = "html, body {\r\n    height: 100%;\r\n    background-color: #446E86;\r\n}"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = "html, body {\n    height: 100%;\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-navigation-menu></app-navigation-menu>\n<app-body-context-image></app-body-context-image>\n<app-body-context-about-projects></app-body-context-about-projects>"
+module.exports = "<app-navigation-menu></app-navigation-menu>\r\n<app-body-context-image></app-body-context-image>\r\n<app-body-context-about-projects></app-body-context-about-projects>"
 
 /***/ }),
 
@@ -94,7 +94,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _components_navigation_menu_navigation_menu_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/navigation-menu/navigation-menu.component */ "./src/app/components/navigation-menu/navigation-menu.component.ts");
-/* harmony import */ var _components_body_context_image_body_context_image_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/body-context-image/body-context-image.component */ "./src/app/components/body-context-image/body-context-image.component.ts");
+/* harmony import */ var _components_body_context_video_body_context_video_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/body-context-video/body-context-video.component */ "./src/app/components/body-context-video/body-context-video.component.ts");
 /* harmony import */ var _components_body_context_about_projects_body_context_about_projects_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/body-context-about-projects/body-context-about-projects.component */ "./src/app/components/body-context-about-projects/body-context-about-projects.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -116,7 +116,7 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
                 _components_navigation_menu_navigation_menu_component__WEBPACK_IMPORTED_MODULE_3__["NavigationMenuComponent"],
-                _components_body_context_image_body_context_image_component__WEBPACK_IMPORTED_MODULE_4__["BodyContextImageComponent"],
+                _components_body_context_video_body_context_video_component__WEBPACK_IMPORTED_MODULE_4__["BodyContextVideoComponent"],
                 _components_body_context_about_projects_body_context_about_projects_component__WEBPACK_IMPORTED_MODULE_5__["BodyContextAboutProjectsComponent"]
             ],
             imports: [
@@ -140,7 +140,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".about-me-section {\n    background-color: whitesmoke;\n    width: 100%;\n    height: 20em;\n\n    text-align: center;\n    position: relative;\n    padding-top:1em;\n\n    font-size: 2em;\n    font-weight: bold;\n    font-family: PoiretOne-Regular, \"Microsoft JhengHei Light\", Arial;\n}"
+module.exports = ".about-introduction-section {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-items: center;\r\n    flex-direction: column;\r\n\r\n    background-color: whitesmoke;\r\n    position: relative;\r\n    padding-top:1em;\r\n    text-align:center\r\n}\r\n\r\n.about-images {\r\n    float: left;\r\n    margin-right: 5em;\r\n    vertical-align: middle;\r\n    border-radius: 50%;\r\n}\r\n\r\n.about-sub-section {\r\n    width: 85em;\r\n    padding: 3em;\r\n    text-align: left;\r\n}\r\n\r\n.about-sub-title {\r\n    text-align: center;\r\n    padding: 1em;\r\n    font-size: 2em;\r\n    font-weight: bold;\r\n    font-family: PoiretOne-Regular, \"Microsoft JhengHei Light\", Arial;\r\n}\r\n\r\n.about-sub-section-paragraphs {\r\n    height: 10em;\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n}"
 
 /***/ }),
 
@@ -151,7 +151,7 @@ module.exports = ".about-me-section {\n    background-color: whitesmoke;\n    wi
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"about-me-section\">\n    <h4> About Me </h4>\n</div>"
+module.exports = "<div class=\"about-introduction-section\">\r\n    <h4 class=\"about-sub-title\"> About Me </h4>\r\n\r\n    <div class=\"about-me about-sub-section\">\r\n        <img width=250 class=\"about-images\" src=\"../../../assets/images/pictureOfMe.png\"/>\r\n        <span class=\"about-sub-section-paragraphs\">\r\n            <h6 class=\"about-sub-section-title-context\"> My Hobbies </h6>\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n        </span>\r\n    </div>\r\n\r\n    <div class=\"about-hobbies about-sub-section\">\r\n        <img width=250 class=\"about-images\" src=\"../../../assets/images/gaming-icon.jpg\"/>\r\n        <span class=\"about-sub-section-paragraphs\">\r\n            <h6 class=\"about-sub-section-title-context\"> My Hobbies </h6>\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                enim ipsum possimus quidem reiciendis velit voluptate\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n        </span>\r\n    </div>\r\n\r\n    <div class=\"about-aspirations about-sub-section\">\r\n        <img width=250 class=\"about-images\" src=\"../../../assets/images/computing-image-mobile-computer.png\"/>\r\n        <span class=\"about-sub-section-paragraphs\">\r\n            <h6 class=\"about-sub-section-title-context\"> My Hobbies </h6>\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\r\n                Aspernatur assumenda commodi dolores ea,\r\n                enim ipsum possimus quidem reiciendis velit voluptate.\r\n        </span>\r\n    </div>\r\n</div><hr>"
 
 /***/ }),
 
@@ -196,38 +196,38 @@ var BodyContextAboutProjectsComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/body-context-image/body-context-image.component.css":
+/***/ "./src/app/components/body-context-video/body-context-video.component.css":
 /*!********************************************************************************!*\
-  !*** ./src/app/components/body-context-image/body-context-image.component.css ***!
+  !*** ./src/app/components/body-context-video/body-context-video.component.css ***!
   \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".image-context-body {\n    position: relative;\n    line-height: 1.5;\n    display: flex;\n    text-align: center;\n    align-items: center;\n    color: white;\n    height: 45em;\n    padding-bottom: 1em;\n}\n\n.fullscreen-video-wrap {\n    position: absolute;\n    height: 45em;\n\n    left: 0;\n    bottom: 0;\n    right: 0;\n\n    margin-left: auto;\n    margin-right: auto;\n\n}\n\n.video-overlay {\n    position: absolute;\n    width: 100%;\n    height: 45em;\n    background-color: #225470;\n    z-index: 1;\n    opacity: 0.85;\n    top:0;\n    left:0;\n}\n\n.video-overlay-content {\n    text-align: center;\n    position: absolute;\n    white-space: nowrap;\n\n\n    width: 100%;\n    height: 100%;\n\n    z-index: 1;\n    font-size: 4em;\n    font-family: Monaco, \"Lucida Console\", monospace;\n    top: 2em;\n    left: 0;\n    bottom: 0;\n    right: 0;\n\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.text-hobbies {\n    font-size: 0.3em;\n    line-height: 5em;\n}\n\n.gaming-controller-icon {\n    z-index: 5;\n    text-align: center;\n    margin: 0 auto;\n    padding-top: 25em;\n}"
+module.exports = ".image-context-body {\r\n    position: relative;\r\n    line-height: 1.5;\r\n    display: flex;\r\n    text-align: center;\r\n    align-items: center;\r\n    color: white;\r\n    height: 45em;\r\n    padding-bottom: 1em;\r\n}\r\n\r\n.fullscreen-video-wrap {\r\n    position: absolute;\r\n    height: 45em;\r\n\r\n    left: 0;\r\n    bottom: 0;\r\n    right: 0;\r\n\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n\r\n}\r\n\r\n.video-overlay {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 45em;\r\n    background-color: #225470;\r\n    z-index: 1;\r\n    opacity: 0.85;\r\n    top:0;\r\n    left:0;\r\n}\r\n\r\n.video-overlay-content {\r\n    text-align: center;\r\n    position: absolute;\r\n    white-space: nowrap;\r\n\r\n\r\n    width: 100%;\r\n    height: 100%;\r\n\r\n    z-index: 1;\r\n    font-size: 4em;\r\n    font-family: Monaco, \"Lucida Console\", monospace;\r\n    top: 2em;\r\n    left: 0;\r\n    bottom: 0;\r\n    right: 0;\r\n\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n\r\n.text-hobbies {\r\n    font-size: 0.3em;\r\n    line-height: 5em;\r\n}\r\n\r\n.gaming-controller-icon {\r\n    z-index: 5;\r\n    text-align: center;\r\n    margin: 0 auto;\r\n    padding-top: 25em;\r\n}"
 
 /***/ }),
 
-/***/ "./src/app/components/body-context-image/body-context-image.component.html":
+/***/ "./src/app/components/body-context-video/body-context-video.component.html":
 /*!*********************************************************************************!*\
-  !*** ./src/app/components/body-context-image/body-context-image.component.html ***!
+  !*** ./src/app/components/body-context-video/body-context-video.component.html ***!
   \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"image-context-body\">\n    <!-- Video background context-->\n    <div class=\"fullscreen-video-wrap\" [innerHTML]=\"videoTag\"></div>\n\n    <!-- Video Overlay colouring -->\n    <div class=\"video-overlay\"></div>\n\n    <!-- Video Overlay Content -->\n    <div class=\"video-overlay-content\">\n        <h2 class=\"text-common\"> Shane Creedon </h2>\n        <h6 class=\"text-common\"> Software Engineer </h6>\n        <p class=\"text-hobbies\"> Music | Programming | Gaming </p>\n    </div>\n\n    <div class=\"gaming-controller-icon\">\n        <img height=\"128\" src=\"../../assets/images/controller.png\" alt=\"Gaming Controller icon, looks good and holds meaning to me\"/>\n    </div>\n\n</div>\n"
+module.exports = "<div class=\"image-context-body\">\r\n    <!-- Video background context-->\r\n    <div class=\"fullscreen-video-wrap\" [innerHTML]=\"videoTag\"></div>\r\n\r\n    <!-- Video Overlay colouring -->\r\n    <div class=\"video-overlay\"></div>\r\n\r\n    <!-- Video Overlay Content -->\r\n    <div class=\"video-overlay-content\">\r\n        <h2 class=\"text-common\"> Shane Creedon </h2>\r\n        <h6 class=\"text-common\"> Software Engineer </h6>\r\n        <p class=\"text-hobbies\"> Music | Programming | Gaming </p>\r\n    </div>\r\n\r\n    <div class=\"gaming-controller-icon\">\r\n        <img height=\"128\" src=\"../../../assets/images/controller.png\" alt=\"Gaming Controller icon, looks good and holds meaning to me\"/>\r\n    </div>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ "./src/app/components/body-context-image/body-context-image.component.ts":
+/***/ "./src/app/components/body-context-video/body-context-video.component.ts":
 /*!*******************************************************************************!*\
-  !*** ./src/app/components/body-context-image/body-context-image.component.ts ***!
+  !*** ./src/app/components/body-context-video/body-context-video.component.ts ***!
   \*******************************************************************************/
-/*! exports provided: BodyContextImageComponent */
+/*! exports provided: BodyContextVideoComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BodyContextImageComponent", function() { return BodyContextImageComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BodyContextVideoComponent", function() { return BodyContextVideoComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
@@ -241,24 +241,24 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
-var BodyContextImageComponent = /** @class */ (function () {
-    function BodyContextImageComponent(sanitizer) {
+var BodyContextVideoComponent = /** @class */ (function () {
+    function BodyContextVideoComponent(sanitizer) {
         this.sanitizer = sanitizer;
         this.videoTag = this.getVideoTag();
     }
-    BodyContextImageComponent.prototype.ngOnInit = function () { };
-    BodyContextImageComponent.prototype.getVideoTag = function () {
-        return this.sanitizer.bypassSecurityTrustHtml("<video autoplay muted loop playsinline disableRemotePlayback id=\"video-background\">\n            <source src=\"../../assets/stock-videos/background-animation.mp4\" type=\"video/mp4\">\n        </video>");
+    BodyContextVideoComponent.prototype.ngOnInit = function () { };
+    BodyContextVideoComponent.prototype.getVideoTag = function () {
+        return this.sanitizer.bypassSecurityTrustHtml("<video autoplay muted loop playsinline disableRemotePlayback id=\"video-background\">\n            <source src=\"../../../assets/stock-videos/buckle-animation.mp4\" type=\"video/mp4\">\n        </video>");
     };
-    BodyContextImageComponent = __decorate([
+    BodyContextVideoComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-body-context-image',
-            template: __webpack_require__(/*! ./body-context-image.component.html */ "./src/app/components/body-context-image/body-context-image.component.html"),
-            styles: [__webpack_require__(/*! ./body-context-image.component.css */ "./src/app/components/body-context-image/body-context-image.component.css")]
+            selector: 'app-body-context-video',
+            template: __webpack_require__(/*! ./body-context-video.component.html */ "./src/app/components/body-context-video/body-context-video.component.html"),
+            styles: [__webpack_require__(/*! ./body-context-video.component.css */ "./src/app/components/body-context-video/body-context-video.component.css")]
         }),
         __metadata("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["DomSanitizer"]])
-    ], BodyContextImageComponent);
-    return BodyContextImageComponent;
+    ], BodyContextVideoComponent);
+    return BodyContextVideoComponent;
 }());
 
 
@@ -272,7 +272,7 @@ var BodyContextImageComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* Good Colour\n * background-color: #28587B;\n * Charcoal: #36454f;\n */\n.navigation-menu {\n    background-color: white;\n    position: relative;\n    white-space: nowrap;\n    width: 100%;\n    z-index: 2;\n}\n.navigation-items {\n    text-align: center;\n}\n.navigation-items a {\n    text-decoration: none;\n    color: #36464f;\n}\n.navigation-items li a:hover {\n    color: #28587B;\n}\n.navigation-item {\n    display: inline-block;\n    padding: 1.5em;\n    margin-left: 5em;\n    margin-right: 5em;\n\n    font-size: 1.2em;\n    font-weight: bold;\n    font-family: Calibri, Arial;\n}"
+module.exports = "/* Good Colour\r\n * background-color: #28587B;\r\n * Charcoal: #36454f;\r\n */\r\n.navigation-menu {\r\n    position: fixed;\r\n    background-color: white;\r\n    white-space: nowrap;\r\n    width: 100%;\r\n    z-index: 100;\r\n}\r\n.navigation-items {\r\n    text-align: center;\r\n}\r\n.navigation-items a {\r\n    text-decoration: none;\r\n    color: #36464f;\r\n}\r\n.navigation-items li a:hover {\r\n    color: deepskyblue;\r\n}\r\n.navigation-item {\r\n    display: inline-block;\r\n    padding: 1.5em;\r\n    margin-left: 5em;\r\n    margin-right: 5em;\r\n\r\n    font-size: 1.2em;\r\n    font-weight: bold;\r\n    font-family: Calibri, Arial;\r\n}"
 
 /***/ }),
 
@@ -283,7 +283,7 @@ module.exports = "/* Good Colour\n * background-color: #28587B;\n * Charcoal: #3
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"navigation-wrapper\">\n    <div class=\"navigation-menu\">\n        <ul class=\"navigation-items\">\n            <li class=\"navigation-item\"><a href=\"#\"> Home </a></li>\n            <li class=\"navigation-item\"><a href=\"#\"> About </a></li>\n            <li class=\"navigation-item\"><a href=\"#\"> Projects </a></li>\n            <li class=\"navigation-item\"><a href=\"#\"> Contact </a></li>\n        </ul>\n    </div>\n</div>"
+module.exports = "<div class=\"navigation-wrapper\">\r\n    <div class=\"navigation-menu\">\r\n        <ul class=\"navigation-items\">\r\n            <li class=\"navigation-item\"><a href=\"#\"> Home </a></li>\r\n            <li class=\"navigation-item\"><a href=\"#\"> About </a></li>\r\n            <li class=\"navigation-item\"><a href=\"#\"> Projects </a></li>\r\n            <li class=\"navigation-item\"><a href=\"#\"> Contact </a></li>\r\n        </ul>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -388,7 +388,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/Shane/Documents/Git/personal-website/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Shane Creedon\Documents\Github Projects\personal-website\src\main.ts */"./src/main.ts");
 
 
 /***/ })

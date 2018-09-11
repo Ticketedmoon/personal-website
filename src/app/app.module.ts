@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NavigationMenuComponent } from './components/navigation-menu/navigation-menu.component';
-import { BodyContextImageComponent } from './components/body-context-image/body-context-image.component';
-import { BodyContextAboutProjectsComponent } from './components/body-context-about-projects/body-context-about-projects.component';
+import { BodyContextVideoComponent } from './components/body-context-video/body-context-video.component';
+import { BodyContextAboutMeComponent } from './components/body-context-about-me/body-context-about-me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationMenuComponent,
-    BodyContextImageComponent,
-    BodyContextAboutProjectsComponent
+    BodyContextVideoComponent,
+    BodyContextAboutMeComponent
   ],
   imports: [
     BrowserModule

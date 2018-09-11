@@ -3,11 +3,11 @@
  * Charcoal: #36454f;
  */
 .navigation-menu {
+    position: fixed;
     background-color: white;
-    position: relative;
     white-space: nowrap;
     width: 100%;
-    z-index: 2;
+    z-index: 100;
 }
 
 .navigation-items {
@@ -20,7 +20,7 @@
 }
 
 .navigation-items li a:hover {
-    color: #28587B;
+    color: deepskyblue;
 }
 
 .navigation-item {
