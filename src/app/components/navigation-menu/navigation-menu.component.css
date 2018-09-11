@@ -8,6 +8,10 @@
     white-space: nowrap;
     width: 100%;
     z-index: 100;
+
+    -moz-box-shadow: 0 0 3px #000;
+    -webkit-box-shadow: 0 0 3px #000;
+    box-shadow: 0 0 3px #000;
 }
 
 .navigation-items {
