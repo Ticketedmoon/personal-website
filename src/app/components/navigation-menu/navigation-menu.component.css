@@ -4,14 +4,16 @@
  */
 .navigation-menu {
     position: fixed;
-    background-color: white;
-    white-space: nowrap;
+    background-color: #ddd;
     width: 100%;
     z-index: 100;
 
     -moz-box-shadow: 0 0 30px #000;
     -webkit-box-shadow: 0 0 30px #000;
     box-shadow: 0 0 30px #000;
+
+    overflow: hidden;
+
 }
 
 .navigation-items {
@@ -30,10 +32,49 @@
 .navigation-item {
     display: inline-block;
     padding: 1.5em;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 4em;
+    margin-right: 4em;
 
     font-size: 1.2em;
     font-weight: bold;
     font-family: Calibri, Arial;
+}
+
+/* When the screen is less than 775 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 775px) {
+    .navigation-items {
+        display: none;
+    }
+
+    .menu-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-item a {
+        text-decoration: none;
+        color: #36464f;
+    }
+
+    .menu-item a:hover {
+        color: deepskyblue;
+    }
+}
+
+@media screen and (min-width: 775px) {
+    .menu-item {
+        display: none;
+    }
+}
+
+/* When the screen is less than 900 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1100px) {
+    .navigation-item {
+        padding: 1.5em;
+        margin-left: 2em;
+        margin-right: 2em;
+
+        font-size: 1.2em;
+    }
 }
