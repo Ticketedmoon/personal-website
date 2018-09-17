@@ -2,6 +2,10 @@
  * background-color: #28587B;
  * Charcoal: #36454f;
  */
+.navigation-wrapper {
+    height: 4.5em;
+}
+
 .navigation-menu {
     position: fixed;
     background-color: #ddd;
@@ -61,14 +65,13 @@
         color: deepskyblue;
     }
 }
-
-@media screen and (min-width: 775px) {
+@media screen and (min-width: 776px) {
     .menu-item {
         display: none;
     }
 }
 
-/* When the screen is less than 900 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* When the screen is less than 1100 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 1100px) {
     .navigation-item {
         padding: 1.5em;
