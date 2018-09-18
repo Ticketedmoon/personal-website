@@ -9,6 +9,13 @@
     box-shadow: 0 0 50px #fff;
 }
 
+/* Sub-titles on each section
+ * Purely for text modification */
+.header-field {
+    font-size: 1.4em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 /* Div wraps the 2 sub-divs of row-image and row-description*/
 .content-row {
     text-align: center;
