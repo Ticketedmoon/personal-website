@@ -1,0 +1,92 @@
+/* Wrapper*/
+.about-me-wrapper {
+    width: 100%;
+    padding-top: 2em;
+    background-color: whitesmoke;
+
+    -moz-box-shadow: 0 0 50px #fff;
+    -webkit-box-shadow: 0 0 50px #fff;
+    box-shadow: 0 0 50px #fff;
+}
+
+/* Div wraps the 2 sub-divs of row-image and row-description*/
+.content-row {
+    text-align: center;
+    padding: 3em;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.row-image {
+    display: inline-block;
+    vertical-align: middle; /* or top or bottom */
+
+    width: 12.5rem;
+    height: 12.5rem;
+
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border-radius: 99em;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.row-description {
+    display: inline-block;
+    vertical-align: middle; /* or top or bottom */
+    max-width: 75%;
+    text-align: left;
+    padding: 2em 2em 4em 2em;
+}
+
+/* Specific image and row targeting */
+.content-imageA {
+    background: url("/src/assets/images/avatar.png") no-repeat;
+    background-size: contain;
+}
+.content-imageB {
+    background: url("/src/assets/images/css-grid-circle-image.jpg") no-repeat;
+    background-size: contain;
+}
+.content-imageC {
+    background: url("/src/assets/images/software-team.png") no-repeat;
+    background-size: contain;
+}
+
+/* When screen is less than X pixels*/
+@media screen and (max-width: 1250px) {
+    .row-image {
+        width: 9em;
+        height: 9em;
+    }
+
+    .row-description {
+        width: 60%;
+        padding: 2em 0 2em 2em;
+    }
+
+    .content-row {
+        padding: 2em 0 2em 0;
+    }
+}
+
+/* When the screen is less than 400 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 700px) {
+    .row-image {
+        display: block;
+        margin: 0 auto;
+        padding: 1em;
+        width: 12em;
+        height: 12em;
+    }
+
+    .row-description {
+        width: 100%;
+        padding: 2em 0;
+    }
+
+    .content-row {
+        width: 100%;
+        padding: 2em 0 2em 0;
+    }
+}
