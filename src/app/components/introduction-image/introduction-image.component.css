@@ -37,39 +37,27 @@
     margin: 0 auto;
     width: 1.5em;
     height: 1.5em;
+
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border-radius: 99em;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
 
 .image-music {
     background: url("/src/assets/images/circle-guitar-music-icon.png") no-repeat;
     background-size: contain;
-
-    -webkit-border-radius: 99em;
-    -moz-border-radius: 99em;
-    border-radius: 99em;
-    border: 5px solid #eee;
-    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
 
 .image-programming {
     background: url("/src/assets/images/circle-computer-icon.png") no-repeat;
     background-size: contain;
-
-    -webkit-border-radius: 99em;
-    -moz-border-radius: 99em;
-    border-radius: 99em;
-    border: 5px solid #eee;
-    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
 
 .image-gaming {
     background: url("/src/assets/images/circle-gaming-controller-icon.png") no-repeat;
     background-size: contain;
-
-    -webkit-border-radius: 99em;
-    -moz-border-radius: 99em;
-    border-radius: 99em;
-    border: 5px solid #eee;
-    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
 
 .image-music, .image-programming, .image-gaming {
@@ -83,6 +71,11 @@
     .title { font-size: 0.75em;}
     .passions { font-size:  0.35em;}
 
+    .passion-image {
+        width: 1.2em;
+        height: 1.2em;
+    }
+
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -90,6 +83,9 @@
     .passion-image {
         margin: 0.1em;
         padding: 0.3em;
+
+        width: 1em;
+        height: 1em;
     }
 
     .image-content {
@@ -102,10 +98,14 @@
 
 }
 
-/* When the screen is less than 900 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1100px) {
+/* When the screen is less than 400 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 400px) {
     .passion-image {
-        width: 10vw;
-        height: 10vh;
+        width: 0.75em;
+        height: 0.75em;
     }
+
+    .name { font-size: 0.5em;}
+    .title { font-size: 0.35em;}
+    .passions { font-size:  0.2em;}
 }
