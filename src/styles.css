@@ -9,7 +9,6 @@
 html, body {
     height: 100%;
     font-family: "Segoe UI", Tahoma, Georgia, Verdana, sans-serif;
-    overflow-x: hidden;
 }
 
 @font-face {
