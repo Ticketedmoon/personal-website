@@ -2,7 +2,9 @@
 .about-me-wrapper {
     width: 100%;
     padding-top: 2em;
+    padding-bottom: 4em;
     background-color: whitesmoke;
+    text-align: center;
 
     -moz-box-shadow: 0 0 50px #fff;
     -webkit-box-shadow: 0 0 50px #fff;
@@ -48,15 +50,15 @@
 
 /* Specific image and row targeting */
 .content-imageA {
-    background: url("/src/assets/images/avatar.png") no-repeat;
+    background: url("/src/assets/general-images/avatar.png") no-repeat;
     background-size: contain;
 }
 .content-imageB {
-    background: url("/src/assets/images/css-grid-circle-image.png") no-repeat;
+    background: url("/src/assets/general-images/hobby-gaming-controller-icon.png") no-repeat;
     background-size: contain;
 }
 .content-imageC {
-    background: url("/src/assets/images/software-team.png") no-repeat;
+    background: url("/src/assets/general-images/software-team.png") no-repeat;
     background-size: contain;
 }
 

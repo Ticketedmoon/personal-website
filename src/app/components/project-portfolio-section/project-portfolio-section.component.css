@@ -1,0 +1,80 @@
+.project-wrapper {
+    height: 100%;
+    text-align: center;
+    margin-top: 2em;
+
+}
+
+.sub-title {
+    font-family: "Roboto Condensed";
+    font-size: 1.4em;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+
+    height: 100%;
+    padding: 2% 3.5%;
+}
+
+.project-grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -moz-box-shadow: 0 0 10px #000;
+    -webkit-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
+}
+
+.projectA {
+    background-color: teal;
+}
+
+.projectB {
+    background-color: darkred;
+}
+
+.projectC {
+    background-color: forestgreen;
+}
+
+.projectD {
+    background-color: coral;
+}
+
+.projectE {
+    background-color: yellow;
+}
+
+.projectF {
+    background-color: steelblue;
+}
+
+.large {
+    grid-row: span 3;
+    grid-column: span 3;
+}
+
+.medium {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.small {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.tall {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.wide {
+    grid-row: span 2;
+    grid-column: span 3;
+}

@@ -1,0 +1,79 @@
+.technologies-wrapper {
+    padding-top: 3em;
+    text-align: center;
+
+    -moz-box-shadow: 0 0 10px #000;
+    -webkit-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 2.5% 12.5%;
+}
+
+.grid-item {
+    padding: 30%;
+    margin: 0 auto;
+}
+
+.sub-title {
+    font-family: "Roboto Condensed";
+    font-size: 1.4em;
+    margin: 0 auto;
+}
+
+.grid-item-A {
+    background: url("/src/assets/technology-section-images/java.png") no-repeat center;
+    background-size: contain;
+}
+
+.grid-item-B {
+    background: url("/src/assets/technology-section-images/python.png") no-repeat center;
+    background-size: contain;
+}
+
+.grid-item-C {
+    background: url("/src/assets/technology-section-images/angular.png") no-repeat center;
+    background-size: contain;
+}
+
+.grid-item-D {
+    background: url("/src/assets/technology-section-images/spring.jpg") no-repeat center;
+    background-size: contain;
+}
+
+.grid-item-E {
+    background: url("/src/assets/technology-section-images/django.png") no-repeat center;
+    background-size: contain;
+}
+
+.grid-item-F {
+    background: url("/src/assets/technology-section-images/sql.png") no-repeat center;
+    background-size: contain;
+}
+
+/* Responsive units here */
+/* When the screen is less than 775 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 775px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 475px) {
+
+    .sub-title {
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+
+    .grid-container {
+        margin-top: 2em;
+    }
+
+}

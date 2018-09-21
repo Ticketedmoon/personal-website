@@ -3,7 +3,7 @@
 
     width: 100%;
     height: 85%;
-    background: url("/src/assets/images/background.jpg");
+    background: url("/src/assets/general-images/background.jpg");
     background-size: cover;
 
     line-height: 1.5;
@@ -42,17 +42,17 @@
 }
 
 .image-music {
-    background: url("/src/assets/images/circle-guitar-music-icon.png") no-repeat;
+    background: url("/src/assets/general-images/circle-guitar-music-icon.png") no-repeat;
     background-size: contain;
 }
 
 .image-programming {
-    background: url("/src/assets/images/circle-computer-icon.png") no-repeat;
+    background: url("/src/assets/general-images/circle-computer-icon.png") no-repeat;
     background-size: contain;
 }
 
 .image-gaming {
-    background: url("/src/assets/images/circle-gaming-controller-icon.png") no-repeat;
+    background: url("/src/assets/general-images/circle-gaming-controller-icon.png") no-repeat;
     background-size: contain;
 }
 
