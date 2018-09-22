@@ -65,7 +65,7 @@
     }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 600px) {
 
     .sub-title {
         font-size: 0.9em;
@@ -73,7 +73,9 @@
     }
 
     .grid-container {
+        display: block;
         margin-top: 2em;
+        padding-bottom: 2em;
     }
 
 }
