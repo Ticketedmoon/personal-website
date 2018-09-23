@@ -10,6 +10,7 @@
 }
 
 .sub-title {
+    padding: 1em;
     font-size: 1.6em;
     font-family: 'Antic', sans-serif;
 }
@@ -42,19 +43,19 @@ a {
 }
 
 .gmail {
-    background: url("/src/assets/links-images/github.jpg") no-repeat center center;
-    background-size: contain;
+    background: url("/src/assets/links-images/gmail.jpg") no-repeat center center;
+    background-size: cover;
     border-radius: 10%;
 }
 
 .twitter {
-    background: url("/src/assets/links-images/linkedin.png") no-repeat center center;
+    background: url("/src/assets/links-images/twitter.png") no-repeat center center;
     background-size: contain;
     border-radius: 10%;
 }
 
 .steam {
-    background: url("/src/assets/links-images/youtube.png") no-repeat center center;
+    background: url("/src/assets/links-images/steam.png") no-repeat center center;
     background-size: contain;
     border-radius: 10%;
 }

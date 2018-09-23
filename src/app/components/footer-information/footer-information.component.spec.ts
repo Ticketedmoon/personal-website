@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SocialMediaProjectLinksComponent } from './social-media-project-links.component';
+import { FooterInformationComponent } from './footer-information.component';
 
 describe('FooterInformationComponent', () => {
-  let component: SocialMediaProjectLinksComponent;
-  let fixture: ComponentFixture<SocialMediaProjectLinksComponent>;
+  let component: FooterInformationComponent;
+  let fixture: ComponentFixture<FooterInformationComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SocialMediaProjectLinksComponent ]
+      declarations: [ FooterInformationComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SocialMediaProjectLinksComponent);
+    fixture = TestBed.createComponent(FooterInformationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -9,6 +9,7 @@ import {FavouriteTechnologiesComponent} from './components/favourite-technologie
 import {SocialMediaProjectLinksComponent} from './components/social-media-project-links/social-media-project-links.component';
 import {WorkExperienceSectionComponent} from './components/work-experience-section/work-experience-section.component';
 import {MyProtocolForLifeComponent} from './components/my-protocol-for-life/my-protocol-for-life.component';
+import {FooterInformationComponent} from './components/footer-information/footer-information.component';
 
 @NgModule({
     declarations: [
@@ -19,7 +20,8 @@ import {MyProtocolForLifeComponent} from './components/my-protocol-for-life/my-p
         FavouriteTechnologiesComponent,
         SocialMediaProjectLinksComponent,
         WorkExperienceSectionComponent,
-        MyProtocolForLifeComponent
+        MyProtocolForLifeComponent,
+        FooterInformationComponent
     ],
     imports: [
         BrowserModule
