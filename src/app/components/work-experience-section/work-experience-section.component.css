@@ -56,7 +56,7 @@
     background-size: contain;
 }
 .content-imageB {
-    background: url("/src/assets/work-experience-images/christophers_furniture.jpg") no-repeat center center;
+    background: url("/src/assets/work-experience-images/christophers_furniture.png") no-repeat center center;
     background-size: contain;
 }
 .content-imageC {
@@ -64,7 +64,7 @@
     background-size: contain;
 }
 .content-imageD {
-    background: url("/src/assets/work-experience-images/spar.png") no-repeat center center;
+    background: url("/src/assets/work-experience-images/spar.jpg") no-repeat center center;
     background-size: contain;
 }
 

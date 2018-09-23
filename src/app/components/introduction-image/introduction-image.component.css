@@ -5,6 +5,7 @@
     height: 85%;
     background: url("/src/assets/general-images/background.jpg") no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
 
     line-height: 1.5;
     padding-top: 5em;
