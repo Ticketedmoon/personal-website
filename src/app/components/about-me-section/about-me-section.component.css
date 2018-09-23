@@ -50,15 +50,15 @@
 
 /* Specific image and row targeting */
 .content-imageA {
-    background: url("/src/assets/general-images/avatar.png") no-repeat;
+    background: url("/src/assets/general-images/avatar.png") no-repeat center center;
     background-size: contain;
 }
 .content-imageB {
-    background: url("/src/assets/general-images/hobby-gaming-controller-icon.png") no-repeat;
+    background: url("/src/assets/general-images/hobby-gaming-controller-icon.png") no-repeat center center;
     background-size: contain;
 }
 .content-imageC {
-    background: url("/src/assets/general-images/software-team.png") no-repeat;
+    background: url("/src/assets/general-images/software-team.png") no-repeat center center;
     background-size: contain;
 }
 
