@@ -1,4 +1,4 @@
-.links-wrapper {
+#links-wrapper {
     padding-top: 3em;
     text-align: center;
 
@@ -10,7 +10,7 @@
 }
 
 .sub-title {
-    font-size: 1.6em;
+    font-size: 1.8em;
     font-family: 'Antic', sans-serif;
 }
 

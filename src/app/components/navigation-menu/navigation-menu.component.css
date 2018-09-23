@@ -2,7 +2,7 @@
  * background-color: #28587B;
  * Charcoal: #36454f;
  */
-.navigation-wrapper {
+#navigation-wrapper {
     height: 4.5em;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .navigation-items li a:hover {
-    color: deepskyblue;
+    color: #E84C45;
 }
 
 .navigation-item {
