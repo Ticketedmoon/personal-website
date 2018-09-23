@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import * as $ from 'jquery';
 
 @Component({
     selector: 'app-navigation-menu',
@@ -12,11 +11,5 @@ export class NavigationMenuComponent implements OnInit {
     }
 
     ngOnInit() {
-    }
-
-    scroll(id) {
-        console.log(`scrolling to ${id}`);
-        const el = document.getElementById(id);
-        el.scrollIntoView();
     }
 }
