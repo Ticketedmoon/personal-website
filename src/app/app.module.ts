@@ -1,26 +1,31 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { NavigationMenuComponent } from './components/navigation-menu/navigation-menu.component';
-import { IntroductionImageComponent } from './components/introduction-image/introduction-image.component';
-import { AboutMeSectionComponent } from './components/about-me-section/about-me-section.component';
-import { FavouriteTechnologiesComponent } from './components/favourite-technologies/favourite-technologies.component';
-import { SocialMediaProjectLinksComponent } from './components/social-media-project-links/social-media-project-links.component';
+import {AppComponent} from './app.component';
+import {NavigationMenuComponent} from './components/navigation-menu/navigation-menu.component';
+import {IntroductionImageComponent} from './components/introduction-image/introduction-image.component';
+import {AboutMeSectionComponent} from './components/about-me-section/about-me-section.component';
+import {FavouriteTechnologiesComponent} from './components/favourite-technologies/favourite-technologies.component';
+import {SocialMediaProjectLinksComponent} from './components/social-media-project-links/social-media-project-links.component';
+import {WorkExperienceSectionComponent} from './components/work-experience-section/work-experience-section.component';
+import {MyProtocolForLifeComponent} from './components/my-protocol-for-life/my-protocol-for-life.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavigationMenuComponent,
-    IntroductionImageComponent,
-    AboutMeSectionComponent,
-    FavouriteTechnologiesComponent,
-    SocialMediaProjectLinksComponent,
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NavigationMenuComponent,
+        IntroductionImageComponent,
+        AboutMeSectionComponent,
+        FavouriteTechnologiesComponent,
+        SocialMediaProjectLinksComponent,
+        WorkExperienceSectionComponent,
+        MyProtocolForLifeComponent
+    ],
+    imports: [
+        BrowserModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

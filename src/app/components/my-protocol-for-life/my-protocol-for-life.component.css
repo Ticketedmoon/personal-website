@@ -1,0 +1,60 @@
+.image-content {
+    display: table;
+
+    width: 100%;
+    background: url("/src/assets/general-images/Sunset_mountains_clouds_landscapes_sun_forest_rivers_1920x1200.jpg") no-repeat center center;
+    background-size: cover;
+
+    line-height: 1.5;
+    padding: 2em;
+
+    -moz-box-shadow: 0 0 15px #444;
+    -webkit-box-shadow: 0 0 15px #444;
+    box-shadow: 0 0 15px #444;
+}
+
+.image-description {
+    display: table-cell;
+
+    font-size: 2.5em;
+    text-align: center;
+    font-family: PoiretOne-Regular;
+
+    color: white;
+    -webkit-background-clip: text;
+    text-shadow: rgba(0,0,0,0.8) 0px 2px 5px;
+}
+
+.protocol {
+    padding: 0.5em;
+}
+
+/* Responsive media queries */
+/* When the screen is less than 820 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1020px) {
+    .protocol { font-size: 0.75em;}
+    .title { font-size: 0.75em;}
+    .passions { font-size:  0.35em;}
+
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .image-content {
+        height: 50%;
+    }
+
+    .protocol { font-size: 0.6em;}
+    .protocol-title { font-size: 0.8em;}
+    .title { font-size: 0.5em;}
+    .passions { font-size:  0.2em;}
+
+}
+
+/* When the screen is less than 400 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 400px) {
+    .protocol {font-size: 0.5em;}
+    .protocol-title { font-size: 0.7em;}
+    .title { font-size: 0.35em;}
+    .passions { font-size:  0.2em;}
+}

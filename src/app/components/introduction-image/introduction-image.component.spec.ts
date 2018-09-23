@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { IntroductionImageComponent } from './introduction-image.component';
 
-describe('IntroductionImageComponent', () => {
+describe('MyProtocolForLifeComponent', () => {
   let component: IntroductionImageComponent;
   let fixture: ComponentFixture<IntroductionImageComponent>;
 

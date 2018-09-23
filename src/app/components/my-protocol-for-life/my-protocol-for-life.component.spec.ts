@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AboutMeSectionComponent } from './about-me-section.component';
+import { MyProtocolForLifeComponent } from './my-protocol-for-life.component';
 
-describe('WorkExperienceSectionComponent', () => {
-  let component: AboutMeSectionComponent;
-  let fixture: ComponentFixture<AboutMeSectionComponent>;
+describe('MyProtocolForLifeComponent', () => {
+  let component: MyProtocolForLifeComponent;
+  let fixture: ComponentFixture<MyProtocolForLifeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AboutMeSectionComponent ]
+      declarations: [ MyProtocolForLifeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AboutMeSectionComponent);
+    fixture = TestBed.createComponent(MyProtocolForLifeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,107 @@
+/* Wrapper*/
+.about-me-wrapper {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    background-color: whitesmoke;
+    text-align: center;
+
+    -moz-box-shadow: 0 0 10px #000;
+    -webkit-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
+}
+
+/* Sub-titles on each section
+ * Purely for text modification */
+.header-field {
+    font-size: 1.8em;
+    font-family: 'Just Another Hand', cursive;
+}
+
+.header-field-special {
+    font-size: 2em;
+    font-family: 'Antic', sans-serif;
+}
+
+/* Div wraps the 2 sub-divs of row-image and row-description*/
+.content-row {
+    text-align: center;
+    padding: 3em;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.row-image {
+    display: inline-block;
+    vertical-align: middle; /* or top or bottom */
+
+    width: 15rem;
+    height: 15rem;
+
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.row-description {
+    display: inline-block;
+    vertical-align: middle; /* or top or bottom */
+    max-width: 75%;
+    text-align: left;
+    padding: 2em 2em 4em 2em;
+}
+
+/* Specific image and row targeting */
+.content-imageA {
+    background: url("/src/assets/work-experience-images/bpl.png") no-repeat center center;
+    background-size: contain;
+}
+.content-imageB {
+    background: url("/src/assets/work-experience-images/christophers_furniture.jpg") no-repeat center center;
+    background-size: contain;
+}
+.content-imageC {
+    background: url("/src/assets/work-experience-images/hemmingways.png") no-repeat center center;
+    background-size: contain;
+}
+.content-imageD {
+    background: url("/src/assets/work-experience-images/spar.png") no-repeat center center;
+    background-size: contain;
+}
+
+/* When screen is less than X pixels*/
+@media screen and (max-width: 1250px) {
+    .row-image {
+        width: 9em;
+        height: 9em;
+    }
+
+    .row-description {
+        width: 60%;
+        padding: 2em 0 2em 2em;
+    }
+
+    .content-row {
+        padding: 2em 0 2em 0;
+    }
+}
+
+/* When the screen is less than 400 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 700px) {
+    .row-image {
+        display: block;
+        margin: 0 auto;
+        padding: 1em;
+        width: 12em;
+        height: 12em;
+    }
+
+    .row-description {
+        width: 100%;
+        padding: 2em 0;
+    }
+
+    .content-row {
+        width: 100%;
+        padding: 2em 0 2em 0;
+    }
+}
