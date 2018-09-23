@@ -45,7 +45,7 @@
 }
 
 /* When the screen is less than 775 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 780px) {
     .navigation-items {
         display: none;
     }
@@ -65,7 +65,8 @@
         color: deepskyblue;
     }
 }
-@media screen and (min-width: 776px) {
+
+@media screen and (min-width: 781px) {
     .menu-item {
         display: none;
     }

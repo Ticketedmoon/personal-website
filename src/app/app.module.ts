@@ -6,6 +6,7 @@ import { NavigationMenuComponent } from './components/navigation-menu/navigation
 import { IntroductionImageComponent } from './components/introduction-image/introduction-image.component';
 import { AboutMeSectionComponent } from './components/about-me-section/about-me-section.component';
 import { FavouriteTechnologiesComponent } from './components/favourite-technologies/favourite-technologies.component';
+import { SocialMediaProjectLinksComponent } from './components/social-media-project-links/social-media-project-links.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FavouriteTechnologiesComponent } from './components/favourite-technolog
     IntroductionImageComponent,
     AboutMeSectionComponent,
     FavouriteTechnologiesComponent,
+    SocialMediaProjectLinksComponent,
   ],
   imports: [
     BrowserModule

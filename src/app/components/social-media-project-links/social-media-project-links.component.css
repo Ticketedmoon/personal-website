@@ -1,0 +1,77 @@
+.links-wrapper {
+    padding-top: 3em;
+    text-align: center;
+
+    background-color: whitesmoke;
+    -moz-box-shadow: 0 0 5px #000;
+    -webkit-box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
+
+}
+
+.sub-title {
+    font-size: 1.6em;
+    font-family: 'Antic', sans-serif;
+}
+
+.links-container {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    overflow-x: hidden;
+    padding: 3% 1% 5% 1%;
+}
+
+a {
+    margin: 0 5%;
+}
+
+.link {
+    width: 10em;
+    height: 10em;
+
+    margin: 0 auto;
+
+    -moz-box-shadow: 0 0 10px #000;
+    -webkit-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
+}
+
+.github {
+    background: url("/src/assets/links-images/github.jpg") no-repeat center center;
+    background-size: contain;
+    border-radius: 10%;
+}
+
+.linkedin {
+    background: url("/src/assets/links-images/linkedin.png") no-repeat center center;
+    background-size: contain;
+    border-radius: 10%;
+}
+
+.youtube {
+    background: url("/src/assets/links-images/youtube.png") no-repeat center center;
+    background-size: contain;
+    border-radius: 10%;
+}
+
+.github:hover, .youtube:hover, .linkedin:hover {
+    border-radius: 20%;
+}
+
+/* When the screen is less than 775 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 800px) {
+
+    .links-container {
+        display: block;
+        flex-wrap: nowrap;
+    }
+
+    a{
+        margin-top: 2em;
+    }
+}
