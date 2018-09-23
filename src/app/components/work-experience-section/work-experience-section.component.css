@@ -14,13 +14,13 @@
 /* Sub-titles on each section
  * Purely for text modification */
 .header-field {
-    font-size: 1.8em;
-    font-family: 'Just Another Hand', cursive;
+    font-size: 1.4em;
+    font-family: 'Walter Turncoat', cursive;
 }
 
 .header-field-special {
     font-size: 2em;
-    font-family: 'Antic', sans-serif;
+    font-family: 'Dekko', cursive;
 }
 
 /* Div wraps the 2 sub-divs of row-image and row-description*/
