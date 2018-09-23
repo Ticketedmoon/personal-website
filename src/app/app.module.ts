@@ -6,7 +6,6 @@ import { NavigationMenuComponent } from './components/navigation-menu/navigation
 import { IntroductionImageComponent } from './components/introduction-image/introduction-image.component';
 import { AboutMeSectionComponent } from './components/about-me-section/about-me-section.component';
 import { FavouriteTechnologiesComponent } from './components/favourite-technologies/favourite-technologies.component';
-import { ProjectPortfolioSectionComponent } from './components/project-portfolio-section/project-portfolio-section.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +14,6 @@ import { ProjectPortfolioSectionComponent } from './components/project-portfolio
     IntroductionImageComponent,
     AboutMeSectionComponent,
     FavouriteTechnologiesComponent,
-    ProjectPortfolioSectionComponent,
   ],
   imports: [
     BrowserModule
