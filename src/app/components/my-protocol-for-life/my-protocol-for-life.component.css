@@ -1,4 +1,4 @@
-.image-content {
+.image-content-protocol {
     display: table;
 
     width: 100%;
@@ -41,7 +41,7 @@
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-    .image-content {
+    .image-content-protocol {
         height: 50%;
     }
 

@@ -3,6 +3,7 @@
     background: url("/src/assets/general-images/background.jpg") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
+    background-position-y: 100px;
     opacity:0;
 
     width: 100%;
