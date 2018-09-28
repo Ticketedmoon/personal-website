@@ -96,7 +96,7 @@
     }
 
     .row-description {
-        width: 100%;
+        min-width: 90%;
         padding: 2em 0;
     }
 
