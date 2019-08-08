@@ -1,6 +1,6 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
+package-lock
 dist/
-node_modules/
 
 # compiled output
 /tmp
@@ -38,3 +38,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+node_modules
