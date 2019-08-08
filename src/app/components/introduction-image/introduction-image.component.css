@@ -1,6 +1,6 @@
 .image-content {
     display: table;
-    background: url("/src/assets/general-images/background.jpg") no-repeat center center;
+    background: url("/assets/general-images/background.jpg") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     background-position-y: 100px;
@@ -44,17 +44,17 @@
 }
 
 .image-music {
-    background: url("/src/assets/general-images/circle-guitar-music-icon.png") no-repeat center center;
+    background: url("/assets/general-images/circle-guitar-music-icon.png") no-repeat center center;
     background-size: contain;
 }
 
 .image-programming {
-    background: url("/src/assets/general-images/circle-computer-icon.png") no-repeat center center;
+    background: url("/assets/general-images/circle-computer-icon.png") no-repeat center center;
     background-size: contain;
 }
 
 .image-gaming {
-    background: url("/src/assets/general-images/circle-gaming-controller-icon.png") no-repeat center center;
+    background: url("/assets/general-images/circle-gaming-controller-icon.png") no-repeat center center;
     background-size: contain;
 }
 
