@@ -42,19 +42,19 @@ a {
 }
 
 .gmail {
-    background: url("/src/assets/links-images/github.jpg") no-repeat center center;
+    background: url("/assets/links-images/github.jpg") no-repeat center center;
     background-size: contain;
     border-radius: 10%;
 }
 
 .twitter {
-    background: url("/src/assets/links-images/linkedin.png") no-repeat center center;
+    background: url("/assets/links-images/linkedin.png") no-repeat center center;
     background-size: contain;
     border-radius: 10%;
 }
 
 .steam {
-    background: url("/src/assets/links-images/youtube.png") no-repeat center center;
+    background: url("/assets/links-images/youtube.png") no-repeat center center;
     background-size: contain;
     border-radius: 10%;
 }
