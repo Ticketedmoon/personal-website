@@ -16,7 +16,7 @@
 }
 
 .grid-item {
-    padding: 30%;
+    padding: 25%;
     margin: 0 auto;
 }
 
@@ -27,32 +27,47 @@
 }
 
 .grid-item-A {
-    background: url("/assets/technology-section-images/java.png") no-repeat center center;
+    background: url("src/assets/technology-section-images/java.png") no-repeat center center;
     background-size: contain;
 }
 
 .grid-item-B {
-    background: url("/assets/technology-section-images/python.png") no-repeat center center;
+    background: url("src/assets/technology-section-images/python.png") no-repeat center center;
     background-size: contain;
 }
 
 .grid-item-C {
-    background: url("/assets/technology-section-images/angular.png") no-repeat center center;
+    background: url("src/assets/technology-section-images/angular.png") no-repeat center center;
     background-size: contain;
 }
 
 .grid-item-D {
-    background: url("/assets/technology-section-images/spring.png") no-repeat center center;
+    background: url("src/assets/technology-section-images/spring.png") no-repeat center center;
     background-size: contain;
 }
 
 .grid-item-E {
-    background: url("/assets/technology-section-images/django.png") no-repeat center center;
+    background: url("src/assets/technology-section-images/django.png") no-repeat center center;
     background-size: contain;
 }
 
 .grid-item-F {
-    background: url("/assets/technology-section-images/sql.png") no-repeat center center;
+    background: url("src/assets/technology-section-images/sql.png") no-repeat center center;
+    background-size: contain;
+}
+
+.grid-item-G {
+    background: url("src/assets/technology-section-images/react.png") no-repeat center center;
+    background-size: contain;
+}
+
+.grid-item-H {
+    background: url("src/assets/technology-section-images/javascript.png") no-repeat center center;
+    background-size: contain;
+}
+
+.grid-item-I {
+    background: url("src/assets/technology-section-images/node.png") no-repeat center center;
     background-size: contain;
 }
 
