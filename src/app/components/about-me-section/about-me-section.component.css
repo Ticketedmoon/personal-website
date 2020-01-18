@@ -28,15 +28,16 @@
     text-align: center;
     padding: 1em;
     margin: 0 auto;
-    width: 75%;
+    width: 80%;
+    line-height: 1.5em;
 }
 
 .row-image {
     display: inline-block;
     vertical-align: middle; /* or top or bottom */
 
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 10rem;
+    height: 10rem;
 
     -webkit-border-radius: 99em;
     -moz-border-radius: 99em;
@@ -48,30 +49,32 @@
 .row-description {
     display: inline-block;
     vertical-align: middle; /* or top or bottom */
+    font-family: "Lato", Calibri, Arial, Serif, serif;
     max-width: 75%;
     text-align: left;
-    padding: 2em 2em 4em 2em;
+    padding: 2em 2em 4em 3em;
+    font-size: 0.85em;
 }
 
 /* Specific image and row targeting */
 .content-imageA {
-    background: url("/assets/general-images/avatar.png") no-repeat center center;
+    background: url("src/assets/general-images/andorra-me.jpg") no-repeat center center;
     background-size: contain;
 }
 .content-imageB {
-    background: url("/assets/general-images/hobby-gaming-controller-icon.png") no-repeat center center;
+    background: url("src/assets/general-images/hobby-gaming-controller-icon.png") no-repeat center center;
     background-size: contain;
 }
 .content-imageC {
-    background: url("/assets/general-images/software-team.png") no-repeat center center;
+    background: url("src/assets/general-images/software-team.png") no-repeat center center;
     background-size: contain;
 }
 
 /* When screen is less than X pixels*/
 @media screen and (max-width: 1250px) {
     .row-image {
-        width: 9em;
-        height: 9em;
+        width: 12em;
+        height: 12em;
     }
 
     .row-description {

@@ -2,3 +2,8 @@ html, body {
     height: 100em;
     background-color: #446E86;
 }
+
+@font-face {
+    font-family: "Lato";
+    src: url(src/assets/fonts/Lato-Light.ttf);
+}
