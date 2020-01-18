@@ -9,6 +9,11 @@
 
 }
 
+span {
+    color: #119aed;
+    text-shadow: 1px 1px black;
+}
+
 .sub-title {
     padding: 1em;
     font-size: 1.6em;

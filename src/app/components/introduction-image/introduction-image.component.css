@@ -1,6 +1,6 @@
 .image-content {
     display: table;
-    background: url("/assets/general-images/background.jpg") no-repeat center center;
+    background: url("src/assets/general-images/background.jpg") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     background-position-y: 100px;
@@ -18,11 +18,11 @@
 
     font-size: 3.5em;
     text-align: center;
-    font-family: PoiretOne-Regular;
+    font-family: PoiretOne-Regular, serif;
 
     color: white;
     -webkit-background-clip: text;
-    text-shadow: rgba(0,0,0,0.8) 0px 2px 5px;
+    text-shadow: rgba(0,0,0,0.8) 0 2px 5px;
 }
 
 .passions {
@@ -44,17 +44,17 @@
 }
 
 .image-music {
-    background: url("/assets/general-images/circle-guitar-music-icon.png") no-repeat center center;
+    background: url("src/assets/general-images/circle-guitar-music-icon.png") no-repeat center center;
     background-size: contain;
 }
 
 .image-programming {
-    background: url("/assets/general-images/circle-computer-icon.png") no-repeat center center;
+    background: url("src/assets/general-images/circle-computer-icon.png") no-repeat center center;
     background-size: contain;
 }
 
 .image-gaming {
-    background: url("/assets/general-images/circle-gaming-controller-icon.png") no-repeat center center;
+    background: url("src/assets/general-images/circle-gaming-controller-icon.png") no-repeat center center;
     background-size: contain;
 }
 
