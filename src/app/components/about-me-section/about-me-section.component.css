@@ -88,7 +88,7 @@
 }
 
 /* When the screen is less than 400 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .row-image {
         display: block;
         margin: 0 auto;
@@ -98,7 +98,7 @@
     }
 
     .row-description {
-        min-width: 90%;
+        min-width: 75%;
         padding: 2em 0;
     }
 
