@@ -1,15 +1,33 @@
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 1600% 0; }
+}
+
+@-webkit-keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 1600% 0; }
+}
+
 .image-content {
     display: table;
-    background: url("src/assets/general-images/background.jpg") no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
     background-position-y: 100px;
     opacity:0;
 
     width: 100%;
-    height: 62.5%;
+    height: 65.5%;
     line-height: 1.5;
     padding-top: 5em;
+
+    background-image: url(src/assets/general-images/2D-sky.png);
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    -webkit-animation:animatedBackground 100s linear infinite;
+    -moz-animation:animatedBackground 100s linear infinite;
+    -ms-animation:animatedBackground 100s linear infinite;
+    -o-animation:animatedBackground 100s linear infinite;
+    animation:animatedBackground 100s linear infinite;
+
 }
 
 .image-description {
@@ -103,7 +121,20 @@
         height: 0.75em;
     }
 
-    .protocol-title { font-size: 0.5em;}
+    .protocol-title { font-size: 0.65em;}
     .title { font-size: 0.35em;}
     .passions { font-size:  0.2em;}
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .image-content {
+        -webkit-animation:animatedBackground 200s linear infinite;
+        -moz-animation:animatedBackground 200s linear infinite;
+        -ms-animation:animatedBackground 200s linear infinite;
+        -o-animation:animatedBackground 200s linear infinite;
+        animation:animatedBackground 200s linear infinite;
+    }
+
 }

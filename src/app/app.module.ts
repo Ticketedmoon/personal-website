@@ -10,6 +10,7 @@ import {SocialMediaProjectLinksComponent} from './components/social-media-projec
 import {WorkExperienceSectionComponent} from './components/work-experience-section/work-experience-section.component';
 import {MyProtocolForLifeComponent} from './components/my-protocol-for-life/my-protocol-for-life.component';
 import {FooterInformationComponent} from './components/footer-information/footer-information.component';
+import {IonicModule} from '@ionic/angular';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,8 @@ import {FooterInformationComponent} from './components/footer-information/footer
         FooterInformationComponent
     ],
     imports: [
-        BrowserModule
+        BrowserModule,
+        IonicModule
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -6,6 +6,7 @@ import * as $ from 'jquery';
     templateUrl: './introduction-image.component.html',
     styleUrls: ['./introduction-image.component.css']
 })
+
 export class IntroductionImageComponent implements OnInit {
 
     constructor() {
@@ -13,9 +14,8 @@ export class IntroductionImageComponent implements OnInit {
 
     ngOnInit() {
         $('.image-content').animate({
-            backgroundPositionY: '-=100px',
             opacity: 1,
-        }, 1500);
+        }, 2000);
     }
 
 }
