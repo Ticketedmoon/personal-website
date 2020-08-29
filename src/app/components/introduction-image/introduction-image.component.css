@@ -80,6 +80,18 @@
     margin: 0.5em;
 }
 
+.protocol-title {
+    font-size: 1.75em;
+}
+
+.title {
+    font-size: 0.75em;
+}
+
+.passions {
+    font-size: 0.5em;
+}
+
 /* Responsive media queries */
 /* When the screen is less than 820 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 820px) {

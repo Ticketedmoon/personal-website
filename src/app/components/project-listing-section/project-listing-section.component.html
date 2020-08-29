@@ -1,0 +1,21 @@
+<div class="project-listing-wrapper">
+    <span class="sub-title"> Check out my projects </span>
+    <div class="github-projects">
+        <div class="card github-project" ng-cloak ng-hide="i > totalProjectsShown"
+             *ngFor="let repo of repositories | slice:0:totalProjectsShown; let i = index" [attr.data-index]="i">
+            <div class="project-wrapper">
+                <div class="card-body">
+                    <h5 class="card-title">{{adjustRepoName(repo.name)}}</h5>
+                    <h5 class="card-language-{{i}}">{{getLanguage(repo.language, i)}}</h5>
+                    <p class="card-text">{{repo.description}}</p>
+                </div>
+                <div class="card-body-button">
+                    <a href="{{repo.html_url}}" class="btn btn-primary">Visit Project Repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shown-more-less-button">
+        <a (click)="clickProjectButton()" class="btn btn-success"> {{buttonText}} </a>
+    </div>
+</div>

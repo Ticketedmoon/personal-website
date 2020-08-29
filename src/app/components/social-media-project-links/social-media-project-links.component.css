@@ -63,6 +63,28 @@ a {
     border-radius: 20%;
 }
 
+.github-projects {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-gap: 3em;
+    justify-content: center;
+    padding: 3em;
+}
+
+.github-project {
+    margin: 0 auto;
+    box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.1);
+    padding: 1em;
+}
+
+.project-link > a {
+    text-decoration: none;
+}
+
+.card-img-top {
+    border-radius: 5%;
+}
+
 /* When the screen is less than 775 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
 
