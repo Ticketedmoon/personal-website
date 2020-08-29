@@ -13,13 +13,23 @@ export class ProjectListingSectionComponent implements OnInit {
   repositories : object[];
   colourMap: Map<string, string> = new Map<string, string>();
   totalProjectsShown: number = this.DEFAULT_PROJECT_SHOWN_AMOUNT;
+  projectNameToLanguageListMap: Map<string, string[]> = new Map<string, string[]>();
   buttonText: string;
 
   constructor(private http: HttpClient) {
     let req = http.get("https://api.github.com/users/ShaneCreedon/repos");
     req.subscribe(data => {
       this.repositories = data as object[];
+      this.repositories.map(element => {
+        let languagesForProjectUrl = element["languages_url"];
+        let languagesForProjectReq = http.get(languagesForProjectUrl);
+        languagesForProjectReq.subscribe(data => {
+          let languageListForProj: string[] = Object.keys(data);
+          this.projectNameToLanguageListMap.set(element["name"], languageListForProj);
+        })
+      })
     });
+
     this.colourMap.set("Java", "#00ba1a");
     this.colourMap.set("TypeScript", "#00ade0");
     this.colourMap.set("Haskell", "#ff5613");
@@ -27,6 +37,8 @@ export class ProjectListingSectionComponent implements OnInit {
     this.colourMap.set("CSS", "#cc63ff");
     this.colourMap.set("Python", "#94d649");
     this.colourMap.set("HTML", "#ff6565");
+    this.colourMap.set("Shell", "#c4e212");
+    this.colourMap.set("PHP", "#12d1e2");
 
     this.buttonText = "Click to show more projects";
   }
@@ -41,6 +53,10 @@ export class ProjectListingSectionComponent implements OnInit {
       elem.style.color = this.getRandomColour();
     }
     return language;
+  }
+
+  getLanguagesFromMap(projectName: string) {
+    return this.projectNameToLanguageListMap.get(projectName);
   }
 
   clickProjectButton() {

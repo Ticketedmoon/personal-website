@@ -6,11 +6,15 @@
             <div class="project-wrapper">
                 <div class="card-body">
                     <h5 class="card-title">{{adjustRepoName(repo.name)}}</h5>
-                    <h5 class="card-language-{{i}}">{{getLanguage(repo.language, i)}}</h5>
+                    <h5 class="card-languages-{{i}}" *ngFor="let projectName of projectNameToLanguageListMap.get(repo.name)">
+                        <div class="card-language-{{i}}" *ngFor="let language of getLanguagesFromMap(projectName)">
+                        {{ getLanguage(language, i) }}
+                        </div>
+                    </h5>
                     <p class="card-text">{{repo.description}}</p>
                 </div>
                 <div class="card-body-button">
-                    <a href="{{repo.html_url}}" class="btn btn-primary">Visit Project Repository</a>
+                    <a href="{{repo['html_url']}}" class="btn btn-primary">Visit Project Repository</a>
                 </div>
             </div>
         </div>
