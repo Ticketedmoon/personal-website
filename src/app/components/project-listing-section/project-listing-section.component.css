@@ -26,6 +26,8 @@
     margin: 0 auto;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     padding: 1em;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-link > a {
@@ -52,10 +54,12 @@
     padding: 1em;
 }
 
+.card-body-button > .btn {
+    font-size: 0.75em;
+}
+
 .project-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    flex-grow: 1;
 }
 
 .view-more-projects-btn {
