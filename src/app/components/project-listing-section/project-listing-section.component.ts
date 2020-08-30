@@ -23,7 +23,7 @@ export class ProjectListingSectionComponent implements OnInit {
 				'Authorization': `token ${environment.GITHUB_TOKEN}`
 			})
 		}
-		let apiKeyReq = http.get(" https://api.github.com/user/repos", requestOptions)
+		let apiKeyReq = http.get("https://api.github.com/user/repos", requestOptions)
 		apiKeyReq.subscribe(data => {
 			let dataToCleanse = data as object[]
 			this.repositories = dataToCleanse.filter(proj => proj["owner"]["login"] === "ShaneCreedon");
