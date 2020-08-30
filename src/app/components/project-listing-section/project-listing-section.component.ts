@@ -40,7 +40,7 @@ export class ProjectListingSectionComponent implements OnInit {
 		this.colourMap.set("Shell", "#7a8c14");
 		this.colourMap.set("PHP", "#54d8e2");
 
-		this.buttonText = "Click to show more projects";
+		this.buttonText = "Click to view more";
 	}
 
 	private getRepositoryInformation(http, requestOptions) {
@@ -70,10 +70,10 @@ export class ProjectListingSectionComponent implements OnInit {
 	showMoreOrLessProjects() {
 		if (this.totalProjectsShown == this.repositories.length) {
 			this.totalProjectsShown = this.DEFAULT_PROJECT_SHOWN_AMOUNT;
-			this.buttonText = "Click to show more projects";
+			this.buttonText = "Click to view more";
 		} else {
 			this.totalProjectsShown = this.repositories.length;
-			this.buttonText = "Click to show less";
+			this.buttonText = "Click to view less";
 		}
 	}
 

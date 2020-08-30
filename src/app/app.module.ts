@@ -12,6 +12,9 @@ import {WorkExperienceSectionComponent} from './components/work-experience-secti
 import {MyProtocolForLifeComponent} from './components/my-protocol-for-life/my-protocol-for-life.component';
 import {FooterInformationComponent} from './components/footer-information/footer-information.component';
 import {IonicModule} from '@ionic/angular';
+import {MatButtonModule} from "@angular/material/button";
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import {MatIconModule} from "@angular/material/icon";
 
 
 @NgModule({
@@ -30,7 +33,10 @@ import {IonicModule} from '@ionic/angular';
     imports: [
         BrowserModule,
         IonicModule,
-        HttpClientModule
+        HttpClientModule,
+        MatButtonModule,
+        MatButtonToggleModule,
+        MatIconModule
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -58,3 +58,8 @@
     align-items: stretch;
 }
 
+.view-more-projects-btn {
+    padding-bottom: 2em;
+    font-weight: bold;
+    font-family: "lato", Calibri, serif;
+}
