@@ -67,3 +67,9 @@
     font-weight: bold;
     font-family: "lato", Calibri, serif;
 }
+
+@media screen and (max-width: 1000px) {
+    .github-projects {
+       grid-template-columns: 1fr;
+    }
+}
