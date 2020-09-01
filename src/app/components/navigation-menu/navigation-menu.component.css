@@ -41,7 +41,7 @@
 
     font-size: 1.2em;
     font-weight: bold;
-    font-family: Calibri, Arial;
+    font-family: "Lato", Calibri, Arial, serif;
 }
 
 /* When the screen is less than 775 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
