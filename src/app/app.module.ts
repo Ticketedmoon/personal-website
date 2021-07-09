@@ -6,7 +6,6 @@ import {NavigationMenuComponent} from './components/navigation-menu/navigation-m
 import {IntroductionImageComponent} from './components/introduction-image/introduction-image.component';
 import {AboutMeSectionComponent} from './components/about-me-section/about-me-section.component';
 import {FavouriteTechnologiesComponent} from './components/favourite-technologies/favourite-technologies.component';
-import {ProjectListingSectionComponent} from './components/project-listing-section/project-listing-section.component';
 import {SocialMediaProjectLinksComponent} from './components/social-media-project-links/social-media-project-links.component';
 import {WorkExperienceSectionComponent} from './components/work-experience-section/work-experience-section.component';
 import {MyProtocolForLifeComponent} from './components/my-protocol-for-life/my-protocol-for-life.component';
@@ -24,7 +23,6 @@ import {MatIconModule} from "@angular/material/icon";
         IntroductionImageComponent,
         AboutMeSectionComponent,
         FavouriteTechnologiesComponent,
-        ProjectListingSectionComponent,
         SocialMediaProjectLinksComponent,
         WorkExperienceSectionComponent,
         MyProtocolForLifeComponent,

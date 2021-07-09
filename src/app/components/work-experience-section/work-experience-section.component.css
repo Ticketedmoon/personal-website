@@ -14,14 +14,10 @@
 
 /* Sub-titles on each section
  * Purely for text modification */
-.header-field {
-    font-size: 1.4em;
-    font-family: 'Walter Turncoat', cursive;
-}
-
-.header-field-special {
-    font-size: 2em;
-    font-family: 'Dekko', cursive;
+.header-field, .header-field-special {
+    font-size: 1.5em;
+    font-family: "Lato", Calibri, Arial, serif;
+    font-weight: bold;
 }
 
 /* Div wraps the 2 sub-divs of row-image and row-description*/
@@ -53,10 +49,10 @@
     display: inline-block;
     vertical-align: middle; /* or top or bottom */
     font-family: "Lato", Calibri, Arial, Serif, serif;
-    max-width: 75%;
+    width: 75%;
     text-align: left;
     padding: 2em 2em 4em 3em;
-    font-size: 0.85em;
+    font-size: 0.9em;
 }
 
 /* Specific image and row targeting */

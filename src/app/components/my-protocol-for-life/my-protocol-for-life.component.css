@@ -1,25 +1,12 @@
-@keyframes gradient {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
-}
-
 .image-content-protocol {
-    display: table;
+    position: relative;
 
     width: 100%;
     background-size: cover;
-    background: linear-gradient(-45deg, #2d70ee, #9401d2, #5464ff, #00d599);
-    background-size: 400% 400%;
+    background-color: #0249b1;
     animation: gradient 20s ease infinite;
 
-    line-height: 1.5;
+    line-height: 2;
     padding: 2em;
 
     -moz-box-shadow: 0 0 15px #444;
@@ -28,11 +15,11 @@
 }
 
 .image-description {
-    display: table-cell;
+    display: grid;
 
-    font-size: 2.35em;
+    font-size: 2em;
     text-align: center;
-    font-family: PoiretOne-Regular, calibri, serif;
+    font-family: calibri, serif;
 
     color: white;
     -webkit-background-clip: text;
@@ -42,6 +29,29 @@
 .protocol {
     padding: 0.5em;
 }
+
+.protocol-title {
+    font-size: 3.56rem;
+    line-height: 110%;
+    margin: 0 0 0.5em 0;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
 
 /* Responsive media queries */
 /* When the screen is less than 820 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
