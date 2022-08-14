@@ -57,22 +57,26 @@
 
 /* Specific image and row targeting */
 .content-imageA {
-    background: url("src/assets/work-experience-images/brightflag.png") no-repeat center center;
+    background: url("src/assets/work-experience-images/sstk.png") no-repeat center center;
     background-size: contain;
 }
 .content-imageB {
-    background: url("src/assets/work-experience-images/bpl.png") no-repeat center center;
+    background: url("src/assets/work-experience-images/brightflag.png") no-repeat center center;
     background-size: contain;
 }
 .content-imageC {
-    background: url("src/assets/work-experience-images/christophers_furniture.png") no-repeat center center;
+    background: url("src/assets/work-experience-images/bpl.png") no-repeat center center;
     background-size: contain;
 }
 .content-imageD {
-    background: url("src/assets/work-experience-images/hemmingways.png") no-repeat center center;
+    background: url("src/assets/work-experience-images/christophers_furniture.png") no-repeat center center;
     background-size: contain;
 }
 .content-imageE {
+    background: url("src/assets/work-experience-images/hemmingways.png") no-repeat center center;
+    background-size: contain;
+}
+.content-imageF {
     background: url("src/assets/work-experience-images/spar.jpg") no-repeat center center;
     background-size: contain;
 }
