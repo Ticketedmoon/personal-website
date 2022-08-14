@@ -25,8 +25,7 @@
     "rxjs": "^6.5.4",
     "rxjs-compat": "^6.6.2",
     "serialize-javascript": "^4.0.0",
-    "string.prototype.replaceall": "^1.0.3",
-    "zone.js": "~0.10.2"
+    "string.prototype.replaceall": "^1.0.3"
   },
   "devDependencies": {
     "@angular/animations": "^8.2.14",
