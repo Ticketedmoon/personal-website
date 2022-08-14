@@ -15,6 +15,10 @@ Single page design
 > Work Experience and technologies used
 > 5 Rules for life  
 > Contact me - Steam, Email, Twitter
+
 ## Further help & References
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+
+## Local Setup
+- Node: <= 16.16.0

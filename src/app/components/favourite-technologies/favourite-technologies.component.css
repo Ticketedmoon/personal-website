@@ -33,37 +33,37 @@
 }
 
 .grid-item-B {
-    background: url("src/assets/technology-section-images/python.png") no-repeat center center;
+    background: url("src/assets/technology-section-images/spring-boot.png") no-repeat center center;
     background-size: contain;
 }
 
 .grid-item-C {
-    background: url("src/assets/technology-section-images/angular.png") no-repeat center center;
+    background: url("src/assets/technology-section-images/python.png") no-repeat center center;
     background-size: contain;
 }
 
 .grid-item-D {
-    background: url("src/assets/technology-section-images/spring.png") no-repeat center center;
-    background-size: contain;
-}
-
-.grid-item-E {
-    background: url("src/assets/technology-section-images/django.png") no-repeat center center;
-    background-size: contain;
-}
-
-.grid-item-F {
     background: url("src/assets/technology-section-images/sql.png") no-repeat center center;
     background-size: contain;
 }
 
+.grid-item-E {
+    background: url("src/assets/technology-section-images/elastic.svg") no-repeat center center;
+    background-size: contain;
+}
+
+.grid-item-F {
+    background: url("src/assets/technology-section-images/redis.png") no-repeat center center;
+    background-size: contain;
+}
+
 .grid-item-G {
-    background: url("src/assets/technology-section-images/react.png") no-repeat center center;
+    background: url("src/assets/technology-section-images/c_plus_plus.png") no-repeat center center;
     background-size: contain;
 }
 
 .grid-item-H {
-    background: url("src/assets/technology-section-images/javascript.png") no-repeat center center;
+    background: url("src/assets/technology-section-images/react.png") no-repeat center center;
     background-size: contain;
 }
 

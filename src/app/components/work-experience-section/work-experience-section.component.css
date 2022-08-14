@@ -57,7 +57,7 @@
 
 /* Specific image and row targeting */
 .content-imageA {
-    background: url("src/assets/work-experience-images/sstk.png") no-repeat center center;
+    background: url("src/assets/work-experience-images/sstk.jpeg") no-repeat center center;
     background-size: contain;
 }
 .content-imageB {
