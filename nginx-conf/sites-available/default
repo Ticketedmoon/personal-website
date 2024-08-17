@@ -1,0 +1,9 @@
+server {
+	listen 80 default_server;
+	listen 443 ssl default_server;
+
+	ssl_certificate /var/www/ssl/skybreak.app/ssl_cert.crt;
+	ssl_certificate_key /var/www/ssl/skybreak.app/private.key;
+
+	return 301 http://$host$request_uri; # https://www.skybreak.app$request_uri;
+}
