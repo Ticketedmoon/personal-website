@@ -1,0 +1,40 @@
+.wrapper {
+  padding-top: 3em;
+  padding-bottom: 2em;
+  text-align: center;
+  box-shadow: 0 0 10px #000;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  font-family: 'Lato', Calibri, Arial, serif;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 50px;
+  padding: 2% 12.5%;
+}
+
+.gridItem {
+  padding: 25%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+@media screen and (max-width: 775px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .subtitle { font-size: 1.1em; font-weight: bold; }
+  .grid { display: block; margin-top: 2em; padding-bottom: 2em; }
+}

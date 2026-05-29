@@ -2,73 +2,83 @@
 
 ## Project Overview
 
-This is **personal-website** (skybreak.app), an Angular 8 single-page application.
-It is a static portfolio site built with Angular CLI, served via Nginx on a Digital Ocean droplet.
+This is **personal-website** (skybreak.app), a Next.js static site for a personal portfolio.
+It is built with React and exported as plain HTML/CSS/JS, served via Nginx on a Digital Ocean droplet.
 
 ## Tech Stack
 
-- **Framework:** Angular 8 (TypeScript)
-- **Build:** Angular CLI (`@angular-devkit/build-angular`)
-- **Styling:** CSS with Materialize CSS, Angular Material 7
+- **Framework:** Next.js 15 (App Router, static export)
+- **UI:** React 19, TypeScript
+- **Styling:** CSS Modules (one `.module.css` per component)
+- **Testing:** Jest + React Testing Library
 - **Web Server:** Nginx (config stored in `nginx-conf/`)
-- **Hosting:** Digital Ocean droplet, served at `skybreak.app`
+- **Hosting:** Vercel (free tier), previously Digital Ocean droplet
 
 ## Project Structure
 
 ```
 src/
   app/
-    app.component.*          # Root component
-    app.module.ts            # Root module
-    components/
-      about-me-section/      # About me content
-      favourite-technologies/ # Tech stack showcase
-      footer-information/    # Footer with contact links (gmail, twitter, steam)
-      introduction-image/    # Hero/landing section
-      my-protocol-for-life/  # Life rules section (has background-animation.css)
-      navigation-menu/       # Top nav bar
-      social-media-project-links/ # Social links (github, linkedin, youtube)
-      work-experience-section/    # Work history
-  assets/
-    fonts/                   # Lato-Light.ttf, PoiretOne-Regular.ttf
-    general-images/          # Hero images, icons, profile photos
-    links-images/            # Social media icons (github, gmail, linkedin, etc.)
-    technology-section-images/ # Tech logos (java, python, react, etc.)
-    work-experience-images/  # Company logos
-  environments/              # Angular environment configs
-  index.html                 # Entry point
-  styles.css                 # Global styles
+    globals.css              # Global styles, font-face declarations
+    layout.tsx               # Root layout with metadata
+    page.tsx                 # Home page composing all sections
+  components/
+    NavigationMenu/          # Fixed top nav bar
+    HeroSection/             # Animated hero with name/title
+    AboutSection/            # Bio rows (story, hobbies, goals)
+    TechGrid/                # 3x3 technology logo grid
+    SocialLinks/             # GitHub, LinkedIn, YouTube links
+    WorkExperience/          # Job history entries
+    ValuesSection/           # Life values with floating bubbles
+    Footer/                  # Contact links (email, Twitter, Steam)
+public/
+  fonts/                     # Lato-Light.ttf, PoiretOne-Regular.ttf
+  images/
+    general/                 # Hero images, icons, profile photos
+    links/                   # Social media icons
+    technologies/            # Tech logos
+    work-experience/         # Company logos
+  favicon.ico
+__tests__/                   # Jest + RTL tests for all components
+scripts/
+  deploy.sh                  # Build + rsync to Digital Ocean
+docs/
+  adrs/                      # Architectural Decision Records
+  DEPLOYMENT.md              # Deployment guide
+  DEVELOPMENT.md             # Dev setup and workflow guide
 nginx-conf/                  # Nginx server configuration (reference copies)
-docs/                        # Deployment guide and documentation
 ```
 
 ## Key Commands
 
 ```bash
 npm install                  # Install dependencies
-npm run start                # Local dev server (ng serve)
-npm run build-prod           # Production build (output: dist/personal-website/)
-npm run lint                 # Run tslint
+npm run dev                  # Local dev server with hot reload
+npm run build                # Production build (output: out/)
+npm test                     # Run all tests
+npm run deploy               # Build and deploy to Digital Ocean
 ```
 
 ## Build & Deploy
 
-- Production build: `npm run build-prod`
-- Output directory: `dist/personal-website/`
-- Deploy target: `scp` or `rsync` to `/var/www/sites/skybreak.app/html/personal-website/` on the droplet
+- **Primary:** Vercel (auto-deploys on push to `main`)
+- **Alternative:** Self-hosted with `output: 'export'` + rsync (see `scripts/deploy.sh`)
+- Production build: `npm run build`
 - Full deployment guide: see `docs/DEPLOYMENT.md`
 
 ## Requirements
 
-- **Node.js:** <= 16.16.0 (required for Angular 8 compatibility)
+- **Node.js:** 18+ (LTS recommended)
 
 ## Conventions
 
-- Each component lives in its own directory under `src/app/components/`
-- Each component has: `.component.ts`, `.component.html`, `.component.css`
-- No unit tests currently (boilerplate stubs were removed as they had no real coverage)
-- CSS background images reference assets via relative or absolute `/assets/...` paths
-- Fonts are loaded via `@font-face` in `app.component.css` and `styles.css`
+- Each component lives in its own directory under `src/components/`
+- Each component has: `ComponentName.tsx` + `ComponentName.module.css`
+- Components are React Server Components by default (no `'use client'`)
+- Content data (jobs, technologies, links) is defined as arrays at the top of each component file
+- Images in `public/` are referenced via root-relative paths (`/images/...`)
+- Fonts are loaded via `@font-face` in `globals.css`
+- Tests use React Testing Library, one test file per component in `__tests__/components/`
 
 ## Nginx
 

@@ -1,35 +1,45 @@
-# Personal Website Development
+# Personal Website
 
-Personal website repository where all files relating to the building /
-maintaining of the website will be stored.  
-Find the website here at: www.skybreak.app
+Personal website repository for [skybreak.app](https://www.skybreak.app).
 
-## Website Hierarchy / Structure
+## Tech Stack
 
-Single page design
+- **Next.js 15** (React 19, TypeScript, static export)
+- **CSS Modules** for scoped styling
+- **Nginx** on a Digital Ocean droplet for hosting
 
-> Navigation Menu / Bar  
-> About me  
-> Personal Projects  
-> Links to Github, LinkedIn, Youtube  
-> Work Experience and technologies used
-> 5 Rules for life  
-> Contact me - Steam, Email, Twitter
+## Quick Start
 
-## Further help & References
+```bash
+npm install
+npm run dev        # http://localhost:3000
+```
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+## Website Structure
 
-## Local Setup
-- Node: <= 16.16.0
+Single page design:
 
-## Why use Nginx as the Web Server?
+> Navigation Menu
+> Hero (name, title, passions)
+> About Me (story, hobbies, goals)
+> Favourite Technologies (3x3 grid)
+> Social Media Links (GitHub, LinkedIn, YouTube)
+> Work Experience
+> Values For Life
+> Contact (Email, Twitter, Steam)
 
-- **Load Balancing:** Nginx can act as a load balancer, distributing incoming requests across multiple backend application servers to improve scalability and availability. This helps handle large traffic volumes without overloading a single server.
-- **Reverse Proxy:** Nginx can function as a reverse proxy, forwarding client requests to the appropriate backend application server and returning the response back to the client. This abstraction simplifies the client-server architecture.
-- **Static Content Serving:** Nginx is highly efficient at serving static content such as images, CSS, and JavaScript files. By offloading this responsibility from the application server, it reduces the load and improves overall performance.
-- **SSL/TLS Termination:** Nginx can handle SSL/TLS encryption and decryption, terminating secure connections at the Nginx layer rather than the application server. This reduces the computational load on the backend application.
-- **Caching:** Nginx provides caching capabilities, allowing it to cache frequently accessed content and serve it directly without forwarding the request to the application server. This reduces response times and server load.
-- **URL Routing:** Nginx can handle URL routing and mapping requests to the appropriate backend services, simplifying the application logic.
-Logging and Monitoring: Nginx provides robust logging and monitoring capabilities, making it easier to troubleshoot issues and analyze traffic patterns.
+## Commands
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Local dev server |
+| `npm run build` | Production build (outputs to `out/`) |
+| `npm test` | Run tests |
+| `npm run deploy` | Build and deploy to Digital Ocean |
+
+## Documentation
+
+- [Development Guide](docs/DEVELOPMENT.md)
+- [Deployment Guide](docs/DEPLOYMENT.md)
+- [ADRs](docs/adrs/) (Architectural Decision Records)
 
