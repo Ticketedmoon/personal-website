@@ -12,7 +12,8 @@ describe('WorkExperience', () => {
 
   it('renders all job entries', () => {
     const companies = [
-      /Shutterstock \(Current\)/,
+      /Microsoft \(Jan 2025/,
+      /Shutterstock \(2 Years\)/,
       /Brightflag \(2 Years/,
       /Bloomberg Polarlake \(6 Months\)/,
       /Christopher's Furniture Services \(3 Months\)/,
@@ -25,12 +26,16 @@ describe('WorkExperience', () => {
   });
 
   it('renders job roles', () => {
-    expect(screen.getByText('Software Engineer (Search)')).toBeInTheDocument();
-    expect(screen.getByText('Software Engineer (Product/Tooling)')).toBeInTheDocument();
-    expect(screen.getByText('Software Engineer Intern')).toBeInTheDocument();
+    expect(screen.getAllByText(/Software Development Engineer II/).length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText('Software Engineer (Search)').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText('Software Engineer (Product/Tooling)').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText('Software Engineer Intern').length).toBeGreaterThanOrEqual(1);
   });
 
   it('links to company websites where available', () => {
+    const microsoftLink = screen.getByRole('link', { name: /microsoft\.com/i });
+    expect(microsoftLink).toHaveAttribute('href', 'https://www.microsoft.com/');
+
     const shutterstockLink = screen.getByRole('link', { name: /shutterstock\.com/i });
     expect(shutterstockLink).toHaveAttribute('href', 'https://www.shutterstock.com/');
 

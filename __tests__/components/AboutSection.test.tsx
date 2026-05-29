@@ -12,8 +12,8 @@ describe('AboutSection', () => {
 
   it('renders all three subsection titles', () => {
     expect(screen.getByText('My Story')).toBeInTheDocument();
-    expect(screen.getByText('My Hobbies and Interests')).toBeInTheDocument();
-    expect(screen.getByText('My Aspirations and Career Goals')).toBeInTheDocument();
+    expect(screen.getByText('Hobbies and Interests')).toBeInTheDocument();
+    expect(screen.getByText('Aspirations and Career Goals')).toBeInTheDocument();
   });
 
   it('contains key biographical content', () => {
@@ -21,9 +21,9 @@ describe('AboutSection', () => {
     expect(screen.getByText(/Computer Applications/)).toBeInTheDocument();
   });
 
-  it('links to Shutterstock', () => {
-    const link = screen.getByRole('link', { name: /shutterstock/i });
-    expect(link).toHaveAttribute('href', 'https://www.shutterstock.com/');
+  it('links to Microsoft', () => {
+    const link = screen.getByRole('link', { name: /microsoft/i });
+    expect(link).toHaveAttribute('href', 'https://www.microsoft.com/');
   });
 
   it('renders three about rows with images', () => {

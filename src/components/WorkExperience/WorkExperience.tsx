@@ -2,35 +2,47 @@ import styles from './WorkExperience.module.css';
 
 const jobs = [
   {
+    company: 'Microsoft',
+    period: 'Jan 2025 \u2013 Present',
+    role: 'Software Development Engineer II (L62)',
+    image: 'microsoft.png',
+    url: 'https://www.microsoft.com/',
+    description: (
+      <>
+        Software Development Engineer II on the Geneva Diagnostics Services
+        team within Azure Core.
+        <br /><br />
+        Working on large-scale distributed systems that power observability
+        and diagnostics across Azure, processing telemetry data at massive
+        scale. Contributing to platform reliability, deployment automation,
+        and developer tooling for the team.
+      </>
+    ),
+  },
+  {
     company: 'Shutterstock',
-    period: 'Current',
+    period: '2 Years',
     role: 'Software Engineer (Search)',
     image: 'sstk.jpeg',
     url: 'https://www.shutterstock.com/',
     description: (
       <>
-        Currently employed as a Software Engineer (Search) at Shutterstock.
+        Software Engineer on the Search team at Shutterstock.
         <br /><br />
-        Added features and improvements to the search service (Java/SpringBoot),
-        enabling faster searching in our index (Apache Solr), more segmentation
-        of content for different use cases, and refactoring of the way in which
-        content is boosted, reducing development time.
+        Built features and performance improvements for the search service
+        (Java/Spring Boot), enabling faster querying across the content index
+        (Apache Solr), improved content segmentation, and refactored boosting
+        logic to reduce development time.
         <br />
-        Built a parity compliance job that can be executed to verify that the
-        content in our index is valid and up-to-date within a specified time
-        period, cross-referencing many other internal APIs.
+        Developed a parity compliance job to verify index integrity against
+        upstream APIs within configurable time windows.
         <br />
-        Built new ways of searching for content in our Editorial Search Index
-        (Elastic Search).
+        Extended Editorial Search capabilities using Elasticsearch and
+        integrated Datadog monitoring via Terraform for cluster-wide
+        observability.
         <br />
-        Utilised Terraform to integrate Datadog with our Elastic Search Index to
-        provide monitoring and alerting of core metrics across all instance
-        replicas.
-        <br />
-        Added automation improvements within the Jenkins pipeline to reduce
-        development time, and reduce the need for manual developer intervention.
-        Executed and managed A/B testing within the Search Platform to hone
-        ranking parameter values and improve Key Performance Indicators (KPIs).
+        Managed A/B testing within the Search Platform to optimize ranking
+        parameters and improve key performance indicators.
       </>
     ),
   },
@@ -42,24 +54,21 @@ const jobs = [
     url: 'https://www.brightflag.com/',
     description: (
       <>
-        Full-Stack Software Engineer at Brightflag.
+        Full-stack Software Engineer at Brightflag, a legal technology
+        company focused on legal spend management.
         <br /><br />
-        I worked at Brightflag for 2 years, 6 months and have grown a lot in
-        terms of my software ability and understanding of how teams interact
-        within an organisation, as well as ways to optimize those interactions.
+        Developed and maintained core product features and internal tooling
+        across the full stack (Java/Spring Boot, React, SQL). Grew
+        significantly in software design, cross-team collaboration, and
+        understanding of enterprise SaaS patterns.
         <br /><br />
-        In terms of technical knowledge, my ability with Spring/SpringBoot,
-        Java, and SQL have improved immensely and I have learned many new skills
-        like React, and a proper grounding with the Model-View-Controller (MVC)
-        design pattern.
-        <br /><br />
-        Areas of expertise gained:
+        Key contributions:
         <br />
-        {'\u2022'} Data migration Tooling (MVC)
+        {'\u2022'} Data migration tooling (MVC architecture)
         <br />
-        {'\u2022'} Building/Maintaining public APIs (MVC)
+        {'\u2022'} Public API development and maintenance
         <br />
-        {'\u2022'} SME for SAML (Single Sign On) and SCIM for user provisioning
+        {'\u2022'} SME for SAML-based Single Sign-On and SCIM user provisioning
         <br />
         {'\u2022'} Internal tooling (React)
         <br />
@@ -75,13 +84,12 @@ const jobs = [
     url: 'https://www.bloombergpolarlake.com/',
     description: (
       <>
-        Software Engineer Intern role at Bloomberg Polarlake.
+        Software Engineer Intern on the DevOps team at Bloomberg Polarlake.
         <br /><br />
-        Worked as a member of the DevOps team where I learned countless new
-        technologies and worked well with my team. Some of these technologies
-        include <b>Spring, Angular6, Ext, Django, Ansible</b> etc. Worked on
-        several microservice architectural backends where I implemented several
-        features for future disaster recovery and Development Operations.
+        Contributed to several microservice backends, implementing features
+        for disaster recovery and operational automation. Gained hands-on
+        experience with <b>Spring, Angular, Django, and Ansible</b> in a
+        fast-paced financial technology environment.
       </>
     ),
   },

@@ -4,8 +4,8 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Shane Creedon - A Web Profile',
   description:
-    "I'm a young, passionate Software Engineer based in Dublin, Ireland. " +
-    'Achieved a BSc Honors degree in Computer Applications in DCU.',
+    'Shane Creedon is a Software Development Engineer II at Microsoft, ' +
+    'based in Dublin, Ireland. B.Sc (Hons) in Computer Applications from DCU.',
   verification: {
     google: 'EKQvwxqNhqjAPTSligwYZCWWAm36dn7WBh6eintW6VI',
   },
