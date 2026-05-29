@@ -14,7 +14,7 @@ const links = [
   {
     name: 'Strava',
     url: 'https://www.strava.com/athletes/149424943',
-    image: '/images/links/strava.png',
+    image: '/images/links/strava.svg',
   },
 ];
 
