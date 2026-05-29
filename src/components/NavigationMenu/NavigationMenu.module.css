@@ -14,15 +14,19 @@
 .items {
   text-align: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .items a {
   text-decoration: none;
   color: #36464f;
+  background-color: transparent;
 }
 
 .items li a:hover {
   color: #119aed;
+  background-color: transparent;
 }
 
 .item {
@@ -48,10 +52,12 @@
 .menuItem a {
   text-decoration: none;
   color: #36464f;
+  background-color: transparent;
 }
 
 .menuItem a:hover {
   color: deepskyblue;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 780px) {

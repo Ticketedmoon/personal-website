@@ -14,7 +14,7 @@ describe('Footer', () => {
 
   it('renders email contact link', () => {
     const email = screen.getByLabelText('Email');
-    expect(email).toHaveAttribute('href', 'mailto:shane.creedon3@mail.dcu.ie?subject=?');
+    expect(email).toHaveAttribute('href', 'mailto:shane.creedon3@gmail.com');
   });
 
   it('renders Twitter contact link', () => {

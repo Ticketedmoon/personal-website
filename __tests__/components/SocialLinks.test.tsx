@@ -10,20 +10,20 @@ describe('SocialLinks', () => {
     expect(screen.getByText('Social Media Links')).toBeInTheDocument();
   });
 
-  it('renders links to GitHub, LinkedIn, and YouTube', () => {
+  it('renders links to GitHub, LinkedIn, and Strava', () => {
     const github = screen.getByLabelText('GitHub');
     expect(github).toHaveAttribute('href', 'https://github.com/Ticketedmoon');
 
     const linkedin = screen.getByLabelText('LinkedIn');
     expect(linkedin).toHaveAttribute(
       'href',
-      'https://www.linkedin.com/in/shane-creedon-49a142128/'
+      'https://www.linkedin.com/in/shane-creedon-49a142128'
     );
 
-    const youtube = screen.getByLabelText('YouTube');
-    expect(youtube).toHaveAttribute(
+    const strava = screen.getByLabelText('Strava');
+    expect(strava).toHaveAttribute(
       'href',
-      'https://www.youtube.com/channel/UCP2hCkdDohDOsrHyeDGV5Xw'
+      'https://www.strava.com/athletes/149424943'
     );
   });
 });

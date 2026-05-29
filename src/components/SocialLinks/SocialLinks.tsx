@@ -8,13 +8,13 @@ const links = [
   },
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/shane-creedon-49a142128/',
+    url: 'https://www.linkedin.com/in/shane-creedon-49a142128',
     image: '/images/links/linkedin.png',
   },
   {
-    name: 'YouTube',
-    url: 'https://www.youtube.com/channel/UCP2hCkdDohDOsrHyeDGV5Xw',
-    image: '/images/links/youtube.png',
+    name: 'Strava',
+    url: 'https://www.strava.com/athletes/149424943',
+    image: '/images/links/strava.png',
   },
 ];
 

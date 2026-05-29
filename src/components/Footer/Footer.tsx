@@ -3,7 +3,7 @@ import styles from './Footer.module.css';
 const contactLinks = [
   {
     name: 'Email',
-    url: 'mailto:shane.creedon3@mail.dcu.ie?subject=?',
+    url: 'mailto:shane.creedon3@gmail.com',
     image: '/images/links/gmail.jpg',
   },
   {
