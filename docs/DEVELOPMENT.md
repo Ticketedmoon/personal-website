@@ -39,8 +39,8 @@ src/
     ├── NavigationMenu/   # Fixed top nav bar
     ├── HeroSection/      # Animated sky hero with name/title
     ├── AboutSection/     # Three bio rows (story, hobbies, goals)
-    ├── TechGrid/         # 3x3 grid of technology logos
-    ├── SocialLinks/      # GitHub, LinkedIn, YouTube links
+    ├── TechGrid/         # 4x3 grid of technology logos (Azure, AWS, Java, C#, etc.)
+    ├── SocialLinks/      # GitHub, LinkedIn, Strava links
     ├── WorkExperience/   # Job history entries
     ├── ValuesSection/    # Life values with floating bubble animation
     └── Footer/           # Contact links (email, Twitter, Steam)
@@ -49,6 +49,8 @@ src/
 Each component has:
 - `ComponentName.tsx` - React component
 - `ComponentName.module.css` - Scoped CSS styles
+
+There is also `ScrollReveal/` which is a `'use client'` component wrapping sections with a fade-up animation via IntersectionObserver.
 
 ---
 

@@ -15,9 +15,9 @@ The site deploys automatically to **Vercel** on every push to `main`.
 5. Add custom domain in Vercel Dashboard > Settings > Domains:
    - Add `skybreak.app`
    - Add `www.skybreak.app`
-6. Update DNS records at your domain registrar:
-   - `A` record for `@` pointing to `76.76.21.21`
-   - `CNAME` record for `www` pointing to `cname.vercel-dns.com`
+6. Update DNS: switch nameservers at your domain registrar to Vercel:
+   - `ns1.vercel-dns.com`
+   - `ns2.vercel-dns.com`
 
 ### Deploying Changes
 

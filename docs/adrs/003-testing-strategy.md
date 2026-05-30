@@ -19,8 +19,8 @@ __tests__/
 │   ├── NavigationMenu.test.tsx    # Nav links and anchor targets
 │   ├── HeroSection.test.tsx       # Name, title, passions
 │   ├── AboutSection.test.tsx      # Bio content, external links
-│   ├── TechGrid.test.tsx          # All 9 technologies rendered
-│   ├── SocialLinks.test.tsx       # GitHub/LinkedIn/YouTube URLs
+│   ├── TechGrid.test.tsx          # All 12 technologies rendered
+│   ├── SocialLinks.test.tsx       # GitHub/LinkedIn/Strava URLs
 │   ├── WorkExperience.test.tsx    # All job entries, company links
 │   ├── ValuesSection.test.tsx     # All 4 values, bubble animation
 │   └── Footer.test.tsx            # Contact links (email/Twitter/Steam)

@@ -35,11 +35,20 @@ Migrate hosting from the Digital Ocean droplet to **Vercel's free Hobby plan**.
 2. Sign up at [vercel.com](https://vercel.com) and import the GitHub repository
 3. Vercel auto-detects Next.js and configures the build
 4. Add custom domain `skybreak.app` in Vercel dashboard
-5. Update DNS records to point to Vercel:
-   - `A` record: `76.76.21.21`
-   - `CNAME` for `www`: `cname.vercel-dns.com`
-6. Remove the `output: 'export'` config (Vercel handles Next.js natively)
-7. Optionally cancel the Digital Ocean droplet once DNS propagates
+5. Switch nameservers at GoDaddy (domain registrar) to Vercel:
+   - `ns1.vercel-dns.com`
+   - `ns2.vercel-dns.com`
+6. Vercel manages all DNS records once nameservers point to it:
+   - `A` record for `@` → `216.198.79.1`
+   - `CNAME` for `www` → `4b9bf53c33567da0.vercel-dns-017.com.`
+7. Remove the `output: 'export'` config (Vercel handles Next.js natively)
+8. Cancel the Digital Ocean droplet once DNS propagates
+
+> **Note:** Nameservers were originally pointing to DigitalOcean (`ns1/2/3.digitalocean.com`).
+> Switching to Vercel nameservers was required because the root domain (`skybreak.app`) showed
+> "Invalid Configuration" when only A/CNAME records were changed without nameserver delegation.
+> A conflicting `www` TXT record (google-site-verification) also had to be removed before the
+> CNAME could be added.
 
 ## What We Keep
 

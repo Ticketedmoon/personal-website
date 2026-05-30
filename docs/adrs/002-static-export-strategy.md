@@ -1,7 +1,7 @@
 # ADR-002: Static Export Deployment Strategy
 
 **Date:** 2026-05-29
-**Status:** Accepted
+**Status:** Superseded by ADR-004 (Vercel hosting)
 
 ## Context
 
@@ -58,3 +58,7 @@ The deploy script:
 - The Nginx config does not need to change (same document root, same setup)
 - No server-side rendering, so no Node.js process needed on the droplet
 - Build output is self-contained: no external dependencies at runtime
+
+> **Note:** This strategy was superseded by ADR-004 (Vercel hosting). The `output: 'export'`
+> config was removed from `next.config.js` since Vercel handles Next.js natively. The static
+> export approach remains documented here as a fallback for self-hosting.
