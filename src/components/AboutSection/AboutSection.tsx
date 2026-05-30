@@ -1,12 +1,23 @@
 import styles from './AboutSection.module.css';
 
+function calculateAge(): number {
+  const birth = new Date(1996, 10, 27); // Nov 27, 1996
+  const today = new Date();
+  let age = today.getFullYear() - birth.getFullYear();
+  const monthDiff = today.getMonth() - birth.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+    age--;
+  }
+  return age;
+}
+
 const rows = [
   {
     image: 'andorra-me.jpg',
     title: 'My Story',
     content: (
       <>
-        Hi, I&apos;m Shane, a 29-year-old software engineer from Dublin, Ireland.{' '}
+        Hi, I&apos;m Shane, a {calculateAge()}-year-old software engineer from Dublin, Ireland.{' '}
         <br />
         I hold a{' '}
         <b>
