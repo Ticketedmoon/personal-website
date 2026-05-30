@@ -9,13 +9,27 @@ const jobs = [
     url: 'https://www.microsoft.com/',
     description: (
       <>
-        Software Development Engineer II on the Azure Log Analytics
-        Ingestion team within Azure Data, working in the observability space.
+        SDE II on the Azure Log Analytics Ingestion team (Azure Data),
+        focused on observability infrastructure at scale.
         <br /><br />
-        Building and maintaining large-scale distributed systems that power
-        log ingestion and observability across Azure, processing telemetry
-        data at massive scale. Contributing to platform reliability,
-        deployment automation, and developer tooling for the team.
+        Key areas of work:
+        <br />
+        {'\u2022'} Building synthetic E2E validation for an expanding surface of
+        data types across Windows, Office, Teams, Xbox, and other Microsoft
+        platforms
+        <br />
+        {'\u2022'} Migrating ingestion workloads from legacy in-memory pipelines
+        to the Northstar ingestion architecture
+        <br />
+        {'\u2022'} Data format optimization: converting JSON and Bond payloads to
+        Parquet, improving the Parquet library, and running benchmark
+        experiments
+        <br />
+        {'\u2022'} Contributing to ODS (Output Delivery Service), a core routing
+        service, including SFMC migration away from CSES
+        <br /><br />
+        Working daily within the Azure ecosystem (Portal, Service Fabric,
+        EV2, Geneva) with deep operational knowledge of Azure infrastructure.
       </>
     ),
   },
