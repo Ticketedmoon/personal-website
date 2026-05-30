@@ -13,7 +13,7 @@ describe('WorkExperience', () => {
   it('renders all job entries', () => {
     const companies = [
       /Microsoft \(Jan 2025/,
-      /Shutterstock \(Nov 2022/,
+      /Shutterstock \(Jan 2022/,
       /Brightflag \(2 Years/,
       /Bloomberg Polarlake \(6 Months\)/,
       /Christopher's Furniture Services \(3 Months\)/,
