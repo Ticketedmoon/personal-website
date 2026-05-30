@@ -24,6 +24,7 @@
   text-decoration: none;
   color: #36464f;
   background-color: transparent !important;
+  transition: color 0.3s ease;
 }
 
 .items li a:hover {

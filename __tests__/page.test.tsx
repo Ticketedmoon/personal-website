@@ -26,6 +26,9 @@ jest.mock('@/components/ValuesSection/ValuesSection', () => {
 jest.mock('@/components/Footer/Footer', () => {
   return function MockFooter() { return <div data-testid="footer" />; };
 });
+jest.mock('@/components/ScrollReveal/ScrollReveal', () => {
+  return function MockScrollReveal({ children }: { children: React.ReactNode }) { return <>{children}</>; };
+});
 
 describe('HomePage', () => {
   it('renders all sections in correct order', () => {

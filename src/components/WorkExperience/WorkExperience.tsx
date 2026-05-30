@@ -9,13 +9,13 @@ const jobs = [
     url: 'https://www.microsoft.com/',
     description: (
       <>
-        Software Development Engineer II on the Geneva Diagnostics Services
-        team within Azure Core.
+        Software Development Engineer II on the Azure Log Analytics
+        Ingestion team within Azure Data, working in the observability space.
         <br /><br />
-        Working on large-scale distributed systems that power observability
-        and diagnostics across Azure, processing telemetry data at massive
-        scale. Contributing to platform reliability, deployment automation,
-        and developer tooling for the team.
+        Building and maintaining large-scale distributed systems that power
+        log ingestion and observability across Azure, processing telemetry
+        data at massive scale. Contributing to platform reliability,
+        deployment automation, and developer tooling for the team.
       </>
     ),
   },

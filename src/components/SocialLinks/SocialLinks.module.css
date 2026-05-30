@@ -35,10 +35,13 @@
   background-position: center center;
   background-size: contain;
   border-radius: 10%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
 }
 
 .link:hover {
   border-radius: 20%;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 800px) {
