@@ -18,7 +18,7 @@ describe('AboutSection', () => {
 
   it('contains key biographical content', () => {
     expect(screen.getByText(/Dublin, Ireland/)).toBeInTheDocument();
-    expect(screen.getByText(/Computer Applications/)).toBeInTheDocument();
+    expect(screen.getAllByText(/Computer Science/).length).toBeGreaterThanOrEqual(1);
   });
 
   it('links to Microsoft', () => {

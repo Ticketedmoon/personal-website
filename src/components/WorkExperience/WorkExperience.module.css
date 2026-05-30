@@ -70,6 +70,17 @@
     width: 10em;
     height: 10em;
   }
-  .rowDescription { min-width: 90%; padding: 2em 0; }
-  .contentRow { width: 100%; padding: 2em 0; }
+  .rowDescription {
+    min-width: 90%;
+    padding: 2em 1em;
+    text-align: left;
+  }
+  .contentRow { width: 95%; padding: 2em 0; }
+}
+
+@media screen and (max-width: 480px) {
+  .sectionTitle, .headerField { font-size: 1.2em; }
+  .rowImage { width: 8em; height: 8em; }
+  .rowDescription { font-size: 0.85em; padding: 1em 0.5em; }
+  .itemWrapper { width: 95%; }
 }

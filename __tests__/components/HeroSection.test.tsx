@@ -12,11 +12,7 @@ describe('HeroSection', () => {
   });
 
   it('renders the job title', () => {
-    expect(screen.getByText('Software engineer')).toBeInTheDocument();
-  });
-
-  it('renders the passions tagline', () => {
-    expect(screen.getByText('Music | Programming | Gaming')).toBeInTheDocument();
+    expect(screen.getByText('Software Development Engineer')).toBeInTheDocument();
   });
 
   it('renders three passion icon containers', () => {

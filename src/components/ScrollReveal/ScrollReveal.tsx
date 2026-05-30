@@ -13,6 +13,7 @@ export default function ScrollReveal({ children, delay = 0 }: ScrollRevealProps)
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -20,7 +21,10 @@ export default function ScrollReveal({ children, delay = 0 }: ScrollRevealProps)
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.15 }
+      {
+        threshold: isMobile ? 0.05 : 0.15,
+        rootMargin: isMobile ? '0px 0px -10% 0px' : '0px',
+      }
     );
 
     if (ref.current) observer.observe(ref.current);

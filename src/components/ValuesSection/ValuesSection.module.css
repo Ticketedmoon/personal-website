@@ -95,9 +95,12 @@
 }
 
 @media screen and (max-width: 600px) {
-  .wrapper { height: 50%; }
+  .wrapper { min-height: auto; padding: 1.5em 1em; }
   .protocol { font-size: 0.6em; }
-  .title { font-size: 0.8em; }
+  .title { font-size: 1.8rem; }
+  .circles li:nth-child(6),
+  .circles li:nth-child(7),
+  .circles li:nth-child(10) { display: none; }
 }
 
 @media screen and (max-width: 400px) {

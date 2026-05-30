@@ -8,22 +8,27 @@
 }
 
 .sectionTitle {
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-family: 'Lato', Calibri, Arial, serif;
   font-weight: bold;
+  display: block;
+  margin-bottom: 0.5em;
 }
 
 .headerField {
   font-size: 1.2em;
-  font-family: cursive, Calibri, Arial, Serif, serif;
+  font-family: 'Lato', Calibri, Arial, serif;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  text-align: left;
 }
 
 .contentRow {
   text-align: center;
-  padding: 1em;
+  padding: 1.5em 1em;
   margin: 0 auto;
-  width: 80%;
-  line-height: 1.5em;
+  width: 77.5%;
+  line-height: 1.7em;
 }
 
 .rowImage {
@@ -48,7 +53,7 @@
 .rowDescription {
   display: inline-block;
   vertical-align: middle;
-  font-family: 'Lato', Calibri, Arial, Serif, serif;
+  font-family: 'Lato', Calibri, Arial, serif;
   font-size: 0.9em;
   width: 75%;
   text-align: left;
@@ -62,13 +67,40 @@
 }
 
 @media screen and (max-width: 900px) {
+  .contentRow {
+    width: 90%;
+    padding: 1.5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .rowImage {
     display: block;
-    margin: 0 auto;
-    padding: 1em;
-    width: 12em;
-    height: 12em;
+    margin: 0 auto 1em;
+    width: 10em;
+    height: 10em;
   }
-  .rowDescription { min-width: 75%; padding: 2em 0; }
-  .contentRow { width: 100%; padding: 2em 0; }
+
+  .rowDescription {
+    display: block;
+    width: 100%;
+    padding: 1em 1.5em;
+    text-align: left;
+    font-size: 0.9em;
+  }
+
+  .headerField {
+    text-align: center;
+    font-size: 1.15em;
+    margin-bottom: 0.6em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sectionTitle { font-size: 1.4em; }
+  .headerField { font-size: 1.05em; }
+  .rowImage { width: 8em; height: 8em; }
+  .rowDescription { font-size: 0.85em; padding: 1em 1em; }
+  .contentRow { width: 95%; }
 }

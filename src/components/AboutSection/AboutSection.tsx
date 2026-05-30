@@ -17,15 +17,16 @@ const rows = [
     title: 'My Story',
     content: (
       <>
-        Hi, I&apos;m Shane, a {calculateAge()}-year-old software engineer from Dublin, Ireland.{' '}
+        Hi, I&apos;m Shane, a {calculateAge()}-year-old software engineer from Dublin, Ireland.
+        <br />
         <br />
         I hold a{' '}
         <b>
-          B.Sc (Hons) in Computer Applications and Software Engineering
+          1.1 (First-Class Honours) B.Sc in Computer Science
         </b>{' '}
         from Dublin City University and currently work at{' '}
         <a href="https://www.microsoft.com/">Microsoft</a> as a Software
-        Development Engineer II.
+        Development Engineer.
         <br />
         <br />
         Technology has been a driving force in my life for as long as I can

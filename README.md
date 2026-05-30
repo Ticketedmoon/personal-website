@@ -1,5 +1,8 @@
 # Personal Website
 
+[![CI](https://github.com/Ticketedmoon/personal-website/actions/workflows/ci.yml/badge.svg)](https://github.com/Ticketedmoon/personal-website/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/Ticketedmoon/personal-website/branch/master/graph/badge.svg)](https://codecov.io/gh/Ticketedmoon/personal-website)
+
 Source code for [skybreak.app](https://www.skybreak.app), a single-page portfolio site.
 
 Built with Next.js 15, React 19, and TypeScript. Hosted on [Vercel](https://vercel.com) (free tier) with automatic deployments on push to `master`.

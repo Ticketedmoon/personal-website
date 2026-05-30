@@ -60,3 +60,8 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .subtitle { font-size: 1.2em; }
+  .link { width: 7em; height: 7em; }
+}

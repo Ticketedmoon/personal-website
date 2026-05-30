@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import NavigationMenu from '@/components/NavigationMenu/NavigationMenu';
 
 describe('NavigationMenu', () => {
@@ -20,7 +20,30 @@ describe('NavigationMenu', () => {
     expect(screen.getByText('Contact').closest('a')).toHaveAttribute('href', '#footer-links-wrapper');
   });
 
-  it('renders the mobile profile link', () => {
-    expect(screen.getByText('Profile')).toBeInTheDocument();
+  it('renders hamburger menu button', () => {
+    const button = screen.getByRole('button', { name: 'Open menu' });
+    expect(button).toBeInTheDocument();
+  });
+
+  it('toggles mobile menu on hamburger click', () => {
+    const button = screen.getByRole('button', { name: 'Open menu' });
+    fireEvent.click(button);
+
+    const mobileLinks = screen.getAllByText('Home');
+    expect(mobileLinks.length).toBe(2);
+    expect(button).toHaveAttribute('aria-expanded', 'true');
+  });
+
+  it('closes mobile menu when a link is clicked', () => {
+    const button = screen.getByRole('button', { name: 'Open menu' });
+    fireEvent.click(button);
+
+    const mobileLinks = screen.getAllByText('About');
+    expect(mobileLinks.length).toBe(2);
+
+    fireEvent.click(mobileLinks[1]);
+
+    const aboutLinks = screen.getAllByText('About');
+    expect(aboutLinks.length).toBe(1);
   });
 });

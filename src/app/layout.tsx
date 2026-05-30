@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
+import './materialize.min.css';
 import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Shane Creedon - A Web Profile',
   description:
-    'Shane Creedon is a Software Development Engineer II at Microsoft, ' +
-    'based in Dublin, Ireland. B.Sc (Hons) in Computer Applications from DCU.',
+    'Shane Creedon is a Software Development Engineer at Microsoft, ' +
+    'based in Dublin, Ireland. 1.1 (First-Class Honours) B.Sc in Computer Science from DCU.',
   verification: {
     google: 'EKQvwxqNhqjAPTSligwYZCWWAm36dn7WBh6eintW6VI',
   },
@@ -21,10 +22,6 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-        />
       </head>
       <body>{children}</body>
     </html>

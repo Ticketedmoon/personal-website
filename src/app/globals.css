@@ -28,10 +28,33 @@ ol, ul {
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 html, body {
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Georgia, Verdana, sans-serif;
   background-color: whitesmoke;
+}
+
+/* Override Materialize nav defaults - use high specificity to beat Materialize */
+html body nav,
+html body nav ul,
+html body nav ul li,
+html body nav ul li.active,
+html body nav ul a,
+html body nav ul a:hover {
+  background-color: transparent !important;
+  color: inherit !important;
+  height: auto !important;
+  line-height: normal !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Prevent Materialize sidenav from interfering */
+html body .sidenav,
+html body nav .sidenav {
+  display: none !important;
 }

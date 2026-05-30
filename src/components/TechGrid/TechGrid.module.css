@@ -42,5 +42,10 @@
 
 @media screen and (max-width: 600px) {
   .subtitle { font-size: 1.1em; font-weight: bold; }
-  .grid { grid-template-columns: repeat(2, 1fr); grid-gap: 30px; padding: 2% 5%; }
+  .grid { grid-template-columns: repeat(2, 1fr); grid-gap: 20px; padding: 4% 8%; }
+}
+
+@media screen and (max-width: 380px) {
+  .grid { grid-gap: 15px; padding: 4% 5%; }
+  .gridItem { padding: 22%; }
 }
