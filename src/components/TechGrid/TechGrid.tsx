@@ -1,7 +1,10 @@
 import styles from './TechGrid.module.css';
 
 const technologies = [
+  { name: 'Azure', image: 'azure.png' },
+  { name: 'AWS', image: 'aws.png' },
   { name: 'Java', image: 'java.png' },
+  { name: 'C#', image: 'csharp.png' },
   { name: 'Spring Boot', image: 'spring-boot.png' },
   { name: 'Python', image: 'python.png' },
   { name: 'SQL', image: 'sql.png' },

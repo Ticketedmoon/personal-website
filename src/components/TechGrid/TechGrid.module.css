@@ -14,10 +14,9 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 50px;
-  padding: 2% 12.5%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  padding: 2% 10%;
 }
 
 .gridItem {
@@ -38,11 +37,10 @@
 @media screen and (max-width: 775px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 600px) {
   .subtitle { font-size: 1.1em; font-weight: bold; }
-  .grid { display: block; margin-top: 2em; padding-bottom: 2em; }
+  .grid { grid-template-columns: repeat(2, 1fr); grid-gap: 30px; padding: 2% 5%; }
 }
