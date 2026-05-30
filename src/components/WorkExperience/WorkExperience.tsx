@@ -21,7 +21,7 @@ const jobs = [
   },
   {
     company: 'Shutterstock',
-    period: '2 Years',
+    period: 'Nov 2022 \u2013 Nov 2024',
     role: 'Software Engineer (Search)',
     image: 'sstk.jpeg',
     url: 'https://www.shutterstock.com/',
