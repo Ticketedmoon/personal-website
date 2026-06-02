@@ -1,7 +1,7 @@
 import styles from './ValuesSection.module.css';
 
 const values = [
-  { keyword: 'Happiness', text: 'Look inwards to find where your', suffix: 'lies.' },
+  { keyword: 'Happiness', text: 'Look inwards to find where your', suffix: ' lies.' },
   { keyword: 'Passions', text: 'Pursue', suffix: ', not paychecks.' },
   { keyword: 'Values', text: 'Do not give up your', suffix: ' in the face of fear.' },
   { keyword: 'Modesty', text: '', suffix: ' is both alluring and powerful.' },

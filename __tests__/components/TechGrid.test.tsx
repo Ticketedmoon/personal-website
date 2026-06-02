@@ -12,8 +12,8 @@ describe('TechGrid', () => {
     ).toBeInTheDocument();
   });
 
-  it('renders all 12 technology items', () => {
-    const techs = ['Azure', 'AWS', 'Java', 'C#', 'Spring Boot', 'Python', 'SQL', 'Elasticsearch', 'Redis', 'C++', 'React', 'Node.js'];
+  it('renders all 15 technology items', () => {
+    const techs = ['Azure', 'AWS', 'Java', 'C#', 'Kubernetes', 'Spring Boot', 'Python', 'Docker', 'Elasticsearch', 'Nginx', 'Redis', 'C++', 'React', 'Node.js', 'Apache Solr'];
     techs.forEach((tech) => {
       expect(screen.getByRole('img', { name: tech })).toBeInTheDocument();
     });
