@@ -95,9 +95,9 @@
 }
 
 @media screen and (max-width: 600px) {
-  .wrapper { min-height: auto; padding: 1.5em 1em; }
-  .protocol { font-size: 0.6em; }
-  .title { font-size: 1.8rem; }
+  .wrapper { min-height: auto; padding: 3em 1em; }
+  .protocol { font-size: 0.6em; line-height: 2.2; }
+  .title { font-size: 1.8rem; margin-bottom: 0.8em; }
   .circles li:nth-child(6),
   .circles li:nth-child(7),
   .circles li:nth-child(10) { display: none; }

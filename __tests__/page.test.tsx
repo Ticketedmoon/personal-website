@@ -50,4 +50,10 @@ describe('HomePage', () => {
     const order = Array.from(elements).map((el) => el.getAttribute('data-testid'));
     expect(order).toEqual(sections);
   });
+
+  it('renders copyright notice with current year', () => {
+    render(<HomePage />);
+    const year = new Date().getFullYear().toString();
+    expect(screen.getByText(new RegExp(`© ${year} Shane Creedon`))).toBeInTheDocument();
+  });
 });

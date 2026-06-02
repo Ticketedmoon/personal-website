@@ -35,6 +35,18 @@ export default function HomePage() {
       <ScrollReveal>
         <Footer />
       </ScrollReveal>
+      <div style={{
+        textAlign: 'center',
+        padding: '1.5em 0',
+        fontSize: '0.9em',
+        color: '#777',
+        fontFamily: "'Lato', sans-serif",
+        letterSpacing: '0.05em',
+        backgroundColor: '#f5f5f5',
+        borderTop: '1px solid #ddd',
+      }}>
+        &copy; {new Date().getFullYear()} Shane Creedon. All rights reserved.
+      </div>
     </>
   );
 }

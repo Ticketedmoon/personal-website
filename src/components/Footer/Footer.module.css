@@ -1,5 +1,6 @@
 .wrapper {
   padding-top: 3em;
+  padding-bottom: 3em;
   text-align: center;
   background-color: whitesmoke;
   box-shadow: 0 0 5px #000;
@@ -64,4 +65,12 @@
 @media screen and (max-width: 480px) {
   .subtitle { font-size: 1.2em; }
   .link { width: 7em; height: 7em; }
+}
+
+.copyright {
+  padding: 1.5em 0;
+  font-size: 0.9em;
+  color: #777;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.05em;
 }
