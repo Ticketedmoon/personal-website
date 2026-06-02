@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './ProjectsSection.module.css';
 import { type ProjectCard, languageColors } from './ProjectsSection';
 
@@ -9,18 +9,41 @@ interface ProjectsTabsProps {
   games: ProjectCard[];
 }
 
-const PAGE_SIZE = 9;
+const DESKTOP_PAGE_SIZE = 9;
+const MOBILE_PAGE_SIZE = 3;
+const MOBILE_BREAKPOINT = 550;
+
+function getPageSize() {
+  if (typeof window === 'undefined') return DESKTOP_PAGE_SIZE;
+  return window.innerWidth <= MOBILE_BREAKPOINT ? MOBILE_PAGE_SIZE : DESKTOP_PAGE_SIZE;
+}
 
 export default function ProjectsTabs({ tools, games }: ProjectsTabsProps) {
   const [activeTab, setActiveTab] = useState<'tools' | 'games'>('tools');
-  const [showCount, setShowCount] = useState(PAGE_SIZE);
+  const [pageSize, setPageSize] = useState(DESKTOP_PAGE_SIZE);
+  const [showCount, setShowCount] = useState(DESKTOP_PAGE_SIZE);
+
+  useEffect(() => {
+    const size = getPageSize();
+    setPageSize(size);
+    setShowCount(size);
+
+    const handleResize = () => {
+      const newSize = getPageSize();
+      setPageSize(newSize);
+      setShowCount(newSize);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const allProjects = activeTab === 'tools' ? tools : games;
   const projects = allProjects.slice(0, showCount);
   const hasMore = showCount < allProjects.length;
 
   const switchTab = (tab: 'tools' | 'games') => {
     setActiveTab(tab);
-    setShowCount(PAGE_SIZE);
+    setShowCount(pageSize);
   };
 
   return (
@@ -75,15 +98,15 @@ export default function ProjectsTabs({ tools, games }: ProjectsTabsProps) {
       {hasMore && (
         <button
           className={styles.loadMore}
-          onClick={() => setShowCount((c) => c + PAGE_SIZE)}
+          onClick={() => setShowCount((c) => c + pageSize)}
         >
           Show More Projects ↓
         </button>
       )}
-      {showCount > PAGE_SIZE && (
+      {showCount > pageSize && (
         <button
           className={styles.loadMore}
-          onClick={() => setShowCount(PAGE_SIZE)}
+          onClick={() => setShowCount(pageSize)}
         >
           Show Less ↑
         </button>
