@@ -20,6 +20,9 @@ jest.mock('@/components/SocialLinks/SocialLinks', () => {
 jest.mock('@/components/WorkExperience/WorkExperience', () => {
   return function MockWork() { return <div data-testid="work" />; };
 });
+jest.mock('@/components/ProjectsSection/ProjectsSection', () => {
+  return function MockProjects() { return <div data-testid="projects" />; };
+});
 jest.mock('@/components/ValuesSection/ValuesSection', () => {
   return function MockValues() { return <div data-testid="values" />; };
 });
@@ -35,7 +38,7 @@ describe('HomePage', () => {
     const { container } = render(<HomePage />);
 
     const sections = [
-      'nav', 'hero', 'about', 'tech', 'social', 'work', 'values', 'footer'
+      'nav', 'hero', 'about', 'tech', 'projects', 'work', 'social', 'values', 'footer'
     ];
 
     sections.forEach((id) => {

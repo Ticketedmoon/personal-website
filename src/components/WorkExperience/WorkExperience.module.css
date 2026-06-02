@@ -17,10 +17,15 @@
 
 .contentRow {
   text-align: center;
-  padding: 1em;
+  padding: 2.5em 1em;
   margin: 0 auto;
   width: 100%;
   line-height: 1.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.contentRow:last-child {
+  border-bottom: none;
 }
 
 .itemWrapper {
@@ -52,7 +57,7 @@
   font-family: 'Lato', Calibri, Arial, Serif, serif;
   width: 75%;
   text-align: left;
-  padding: 2em 2em 4em 3em;
+  padding: 1em 2em 1em 3em;
   font-size: 0.9em;
 }
 

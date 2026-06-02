@@ -33,7 +33,8 @@
   box-shadow: 0 0 10px #000;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: 110%;
+  background-clip: padding-box;
   border-radius: 10%;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
 }
