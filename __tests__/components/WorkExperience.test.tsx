@@ -27,7 +27,7 @@ describe('WorkExperience', () => {
 
   it('renders job roles', () => {
     expect(screen.getAllByText(/Software Development Engineer II/).length).toBeGreaterThanOrEqual(1);
-    expect(screen.getAllByText(/Senior SDE \(Search\)/).length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText(/Software Engineer III \(Search\)/).length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText('Software Engineer (Product/Tooling)').length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText('Software Engineer Intern').length).toBeGreaterThanOrEqual(1);
   });

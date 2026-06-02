@@ -36,7 +36,7 @@ const jobs = [
   {
     company: 'Shutterstock',
     period: 'Jan 2022 \u2013 Nov 2024',
-    role: 'Software Engineer I → II → Senior SDE (Search)',
+    role: 'Software Engineer I → II → Software Engineer III (Search)',
     image: 'sstk.jpeg',
     url: 'https://www.shutterstock.com/',
     description: (
