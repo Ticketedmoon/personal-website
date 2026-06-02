@@ -17,7 +17,7 @@ describe('ValuesSection', () => {
     expect(screen.getByText('Modesty')).toBeInTheDocument();
     // "Values" appears in both the title and as a value keyword,
     // so we check for the specific surrounding text
-    expect(screen.getByText(/Do not give up your/)).toBeInTheDocument();
+    expect(screen.getByText(/Stand by your/)).toBeInTheDocument();
   });
 
   it('renders floating animation circles', () => {

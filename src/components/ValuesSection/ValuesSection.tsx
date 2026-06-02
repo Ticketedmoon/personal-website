@@ -1,9 +1,9 @@
 import styles from './ValuesSection.module.css';
 
 const values = [
-  { keyword: 'Happiness', text: 'Look inwards to find where your', suffix: ' lies.' },
-  { keyword: 'Passions', text: 'Pursue', suffix: ', not paychecks.' },
-  { keyword: 'Values', text: 'Do not give up your', suffix: ' in the face of fear.' },
+  { keyword: 'Happiness', text: 'Seek', suffix: ' from within, never from others.' },
+  { keyword: 'Passions', text: 'Let your', suffix: ' lead, not your payslip.' },
+  { keyword: 'Values', text: 'Stand by your', suffix: ', even when standing alone.' },
   { keyword: 'Modesty', text: '', suffix: ' is both alluring and powerful.' },
 ];
 
