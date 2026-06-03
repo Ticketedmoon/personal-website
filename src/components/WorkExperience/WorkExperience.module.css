@@ -80,7 +80,7 @@
     padding: 2em 1em;
     text-align: left;
   }
-  .contentRow { width: 90%; padding: 2em 0; }
+  .contentRow { width: 95%; padding: 2em 0; }
 }
 
 @media screen and (max-width: 480px) {
