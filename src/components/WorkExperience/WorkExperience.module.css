@@ -80,7 +80,7 @@
     padding: 2em 1em;
     text-align: left;
   }
-  .contentRow { width: 95%; padding: 2em 0; }
+  .contentRow { width: 90%; padding: 2em 0; }
 }
 
 @media screen and (max-width: 480px) {
@@ -88,4 +88,5 @@
   .rowImage { width: 8em; height: 8em; }
   .rowDescription { font-size: 0.85em; padding: 1em 0.5em; }
   .itemWrapper { width: 95%; }
+  .contentRow { width: 95%; }
 }
